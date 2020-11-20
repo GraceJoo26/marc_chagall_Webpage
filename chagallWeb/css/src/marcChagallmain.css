@@ -2,50 +2,19 @@
 
 /* 공통영역 */
 #wrap {
-    width: 100%; height:auto; background-color: #ccc;}
+    width: 100%; height:auto; background-color: #6c6c6c;}
   
   /* mobile---------------------------------------------------- */
  @media screen and (max-width:480px) { 
-    #wrap {
-      width:100%; height:56.25rem; background-color: #acf;}
-    .contain{
-        width:100%; height:100%; background-color: var(--color-white);
-    }
-    .headBox {
-        width:100%; height:100px; background-color: #fff;}
-    .headBox>.menu{
-        float:left;
-        margin-left:10.416667vw; margin-top: 7.7708333vw;
-        width:12.5vw; height: 9.375vw; 
-        background-image: url(../../icon/menu.png);
-        background-size: contain;
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-    }
-    .headBox .logo{
-        float:right;
-        margin-right: 10.4166667vw; margin-top: 3.958333vw;
-        width:12.5vw; height: 13.125vw;
-        background-image: url(../../icon/logo_480.png);
-        background-size: contain;
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-    }
-    hr{ 
+    #viewBox{
         position:relative;
-        left:10.4166667vw;
-        width:79.166667vw; 
-        border: solid 0.1rem #6c6c6c;
-    }
-    .viewBox{
-        position:relative;
-        width:100%; height: 100%;
+        width:100%; height:500px;
         background-image: url(../../img/over-the-town-1918.jpg!Large.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 30% 30%;
     }
-    .viewBox .action{
+    #viewBox .action{
         width:100vw; height: 104.166667vw;
         background-image: url(../../img/over-the-town-1918.jpg!Large.jpg);
         background-size: cover;
@@ -70,20 +39,20 @@
         display:none;
         padding-top:79.583333vw;
     }
-    .address{
+    #address{
         width:100%; height:62.5vw;
         background-color: var(--color-gray);
     }
-    .address .footer_logo{
+    #address .footer_logo{
         float:left; 
-        margin-left:14.375vw; margin-top: 18.333333vw;
-        width:21.875vw; height: 22.083333;
+        margin-left:14.375vw; margin-top: 19.55555556vw;
+        width:21.875vw; height: 22.083333vw;
         background-image: url(../../icon/footer_logo.png);
         background-position: 50% 50%;
         background-size: contain;
         background-repeat: no-repeat;
     }
-    .address .address_01{
+    #address .address_01{
         float:right;
         margin-right:12.5vw; margin-top: 13.3333333vw;
         width:50.208333vw; height:30.8333vw;
@@ -100,7 +69,7 @@
     .contain{
       width:100%; height:62.5rem; background-color: #fff;
     } 
-    .viewBox{
+    #viewBox{
         position:relative;
         width:100%; height: 62.5rem;
         background-image: url(../../img/over-the-town-1918.jpg!Large.jpg);
@@ -108,7 +77,7 @@
         background-size: cover;
         background-position: 30% 40%;
     }
-    .viewBox .action{
+    #viewBox .action{
         width:100%; height: 62.5rem;
         background-image: url(../../img/over-the-town-1918.jpg!Large.jpg);
         background-size: cover;
@@ -130,11 +99,11 @@
     .enter{display:none;padding-top:50.25rem ;}
     
     
-    .address{
+    #address{
         widows: 1024px; height:300px;
         background-color: var(--color-gray);
     }
-    .address .footer_logo{
+    #address .footer_logo{
         float:left; 
         margin-left:90px; margin-top: 66px;
         width:159px; height: 154px;
@@ -143,7 +112,7 @@
         background-size: contain;
         background-repeat: no-repeat;
     }
-    .address .address_01{
+    #address .address_01{
         float:right;
         margin-top: 66px; margin-right: 69px;
         width:248px; height:148px;
@@ -161,14 +130,14 @@
     .contain{
       width:100%; height:62.5rem; background-color: #fff;
     } 
-    .viewBox{
+    #viewBox{
         width:100%; height: 62.5rem;
         background-image: url(../../img/over-the-town-1918.jpg!Large.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 40% 0%;
     }
-    .viewBox .action{
+    #viewBox .action{
         width:100%; height: 62.5rem;
         background-image: url(../../img/over-the-town-1918.jpg!Large.jpg);
         background-repeat: no-repeat;
@@ -192,11 +161,11 @@
         padding-top: 51.125rem;
     }
 
-    .address{
+    #address{
         widows: 1024px; height:300px;
         background-color: var(--color-gray);
     }
-    .address .footer_logo{
+    #address .footer_logo{
         float:left; 
         margin-left:90px; margin-top: 66px;
         width:159px; height: 154px;
@@ -205,7 +174,7 @@
         background-size: contain;
         background-repeat: no-repeat;
     }
-    .address .address_01{
+    #address .address_01{
         float:right;
         margin-top: 66px; margin-right: 69px;
         width:248px; height:148px;
@@ -222,14 +191,14 @@
     .contain{
       width:100%; height:75rem; background-color: #fff;
     } 
-    .viewBox{
+    #viewBox{
         width:100%; height: 75rem;
         background-image: url(../../img/over-the-town-1918.jpg!Large.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 40% 0%;
     }
-    .viewBox .action{
+    #viewBox .action{
         width:100%; height: 75rem;
         background-image: url(../../img/over-the-town-1918.jpg!Large.jpg);
         background-repeat: no-repeat;
@@ -257,11 +226,11 @@
         padding-top: 67.1875rem;
     }
 
-    .address{
+    #address{
         widows: 1024px; height:300px;
         background-color: var(--color-gray);
     }
-    .address .footer_logo{
+    #address .footer_logo{
         float:left; 
         margin-left:90px; margin-top: 66px;
         width:159px; height: 154px;
@@ -270,7 +239,7 @@
         background-size: contain;
         background-repeat: no-repeat;
     }
-    .address .address_01{
+    #address .address_01{
         float:right;
         margin-top: 66px; margin-right: 69px;
         width:248px; height:148px;
@@ -279,3 +248,32 @@
         color:var(--color-white);
     }
   }
+
+/*------------------480(#header)----------------------*/
+  #headBox{
+        width:100%; height:100px; background-color: #fff;}
+    #headBox>.menu{
+        float:left;
+        margin-left:10.416667vw; margin-top: 7.7708333vw;
+        width:12.5vw; height: 9.375vw; 
+        background-image: url(../../icon/menu.png);
+        background-size: contain;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    #headBox .logo{
+        float:right;
+        margin-right: 10.4166667vw; margin-top: 3.958333vw;
+        width:12.5vw; height: 13.125vw;
+        background-image: url(../../icon/logo_480.png);
+        background-size: contain;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    hr{ 
+        position:relative;
+        left:10.4166667vw;
+        width:79.166667vw; 
+        border: solid 0.1rem #6c6c6c;
+    }
+  
