@@ -1,26 +1,27 @@
-/* marcChagall_main.css */
+/* /* /* marcChagall_main.css */
 
 /* 공통영역 */
 #wrap {
-    width: 100%; height:auto; background-color: #6c6c6c;}
+    position:relative;
+    width: 100%; height:auto; 
+    background-color:var(--color-white);}
     
     #viewBox{
         position:relative;
-        width:100%; height:500px;
-        background-image: url(../../img/over-the-town-1918.jpg!Large.jpg);
+        width:100%; height:auto;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 30% 30%;
     }
     #headBox{
-        width:100%; height:11.111111vw
+        width:100%; height:auto;
     }
-    #address{
+    #footBox{
         width:100%; height:auto;
         background-color: var(--color-gray);
     }
 
-  /* tablet -----------------------------------------------------*/
+  /* tablet -----------------------------------------------------
   @media screen and (min-width:481px) and (max-width:1024px) { 
     #wrap {
       width:100%; height:81.25rem; background-color: #fa0;}
@@ -81,7 +82,7 @@
 
   }
   
-  /* laptop ---------------------------------------------------*/
+  /* laptop ---------------------------------------------------
   @media screen and (min-width:1025px) and (max-width:1440px) { 
     #wrap {
       width:100%; height:1300px; margin:auto; background-color: #f07;}
@@ -142,7 +143,7 @@
     }
   }
   
-  /* pc -------------------------------------------------------*/
+  /* pc
   @media screen and (min-width:1441px) { 
     #wrap {
       width:100%; height:86rem; margin:auto; background-color: #7fa;}
@@ -205,83 +206,4 @@
         text-align:right;
         color:var(--color-white);
     }
-  }
-
-/*------------------480(#headBox)----------------------*/
-  .mobile{
-        width:100%; height:100px; background-color: #fff;
-    max-width: 480px;}
-    .mobile .menu{
-        float:left;
-        margin-left:10.416667vw; margin-top: 7.7708333vw;
-        width:12.5vw; height: 9.375vw; 
-        background-image: url(../../icon/menu.png);
-        background-size: contain;
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-    }
-    .mobile .logo{
-        float:right;
-        margin-right: 10.4166667vw; margin-top: 3.958333vw;
-        width:12.5vw; height: 13.125vw;
-        background-image: url(../../icon/logo_480.png);
-        background-size: contain;
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-    }
-    hr{ 
-        position:relative;
-        left:10.4166667vw;
-        width:79.166667vw; 
-        border: solid 0.1rem #6c6c6c;
-    }
-  /*----------------------480(#viewBox)--------------------*/
-
-
-  
-.mobile_view {
-    width:100vw; height: 500px;
-    background-image: url(../../img/over-the-town-1918.jpg!Large.jpg);
-    background-size: cover;
-    background-position: 40% 50%;
-    opacity:90%;
-}
-.mobile_view>.text{
-    position:absolute;
-    display:none; 
-    width:79.166667vw; height:57.6vw;
-    top: 12.166667vw; left:10.416667vw;
-    text-align:center;
-    background-color: var(--color-gray);
-    line-height: 6.25vw;
-    
-}
-
-.mobile_view>.action_02{
-    width:45.625vw; height: 13.6666667vw;
-    display:none; 
-    padding-top:79.583333vw;
-}
-
-
-/*----------------------480(#footBox)--------------------*/
-
-
-#footBox .footer_logo{
-    float:left; 
-    margin-left:14.375vw; margin-top: 19.55555556vw;
-    width:21.875vw; height: 22.083333vw;
-    background-image: url(../../icon/footer_logo.png);
-    background-position: 50% 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-#footBox .address_01{
-    float:right;
-    margin-right:12.5vw; margin-top: 13.3333333vw;
-    width:50.208333vw; height:30.8333vw;
-    font-size: 0.666667vw;
-    text-align:right;
-    color:var(--color-white);
-}
-
+  } -------------------------------------------------------*/
