@@ -1,0 +1,55 @@
+.tablet_view{
+    position:relative;
+    width:100%; height: 1000px;
+    background-image: url(../../img/over-the-town-1918.jpg!Large.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30% 40%;
+}
+.tablet_view .action{
+    width:100%; height: 1000px;
+    background-image: url(../../img/over-the-town-1918.jpg!Large.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30% 40%;
+    opacity:90%;
+}
+.text_tb{
+    
+    position:absolute;
+    width:83.984375vw; height:66.9921875vw;
+    top: 75px; left:80px;
+    text-align:center;
+    background-color: var(--color-gray);
+    line-height: 30px;
+    
+}
+
+.enter_tb{
+    margin-top:804px ; margin-left: 34.375vw;
+    width:320px; height:86px;
+    color:#fff; font-size: 2rem; text-align:center;
+    background-color:var(--color-gray);}
+
+/* =====================footer============================================== */
+.tablet_footer{
+    width: 1024px; height:300px;
+    background-color: var(--color-gray);
+}
+.tablet_footer .footer_logo{
+    float:left; 
+    margin-left:90px; margin-top: 66px;
+    width:159px; height: 154px;
+    background-image: url(../../icon/footer_logo.png);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.tablet_footer .address_01{
+    float:right;
+    margin-top: 66px; margin-right: 69px;
+    width:248px; height:148px;
+    font-size: 0.2rem;
+    text-align:right;
+    color:var(--color-white);
+} 
