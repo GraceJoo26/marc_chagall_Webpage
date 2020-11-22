@@ -34,10 +34,10 @@
     if(nowW===deviceType[0]){
         headBox.load(url+'mobile_Chagall_main_headBox.html', importMobile);
         viewBox.load(url+'mobile_Chagall_main_viewBox.html', importMobile );
-        footBox.load(url+'mobileAndTablet_Chagall_main_footBox.html',importMobile);
+        footBox.load(url+'mobile_Chagall_main_footBox.html',importMobile);
     }else if(nowW===deviceType[1]){
         viewBox.load(url+'tablet_Chagall_main_viewBox.html',importTablet);
-        footBox.load(url+'mobileAndTablet_Chagall_main_footBox.html',importTablet);
+        footBox.load(url+'tablet_Chagall_main_footBox.html',importTablet);
     }else if(nowW===deviceType[2]){
         viewBox.load(url+'laptop_Chagall_main_viewBox.html',importLaptop);
         footBox.load(url+'laptop_Chagall_main_footBox.html',importLaptop);

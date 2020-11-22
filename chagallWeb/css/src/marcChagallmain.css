@@ -42,59 +42,8 @@
     .contain{
       width:100%; height:62.5rem; background-color: #fff;
     } 
-    #viewBox{
-        width:100%; height: 62.5rem;
-        background-image: url(../../img/over-the-town-1918.jpg!Large.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 40% 0%;
-    }
-    #viewBox .action{
-        width:100%; height: 62.5rem;
-        background-image: url(../../img/over-the-town-1918.jpg!Large.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 40% 0%;
-        opacity:90%;
-    }
-    .text{
-        display:none;
-        position:absolute;
-        display:none; 
-        width:1100px; height:662px;
-        top: 85px; left:170px;
-        text-align:center;
-        background-color: var(--color-gray);
-        line-height: 40px;
-        }
-    .marc_chagall{display:none;}
-    .enter{
-        display:none;
-        padding-top: 51.125rem;
-    }
-
-    #address{
-        widows: 1024px; height:300px;
-        background-color: var(--color-gray);
-    }
-    #address .footer_logo{
-        float:left; 
-        margin-left:90px; margin-top: 66px;
-        width:159px; height: 154px;
-        background-image: url(../../icon/footer_logo.png);
-        background-position: 50% 50%;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    #address .address_01{
-        float:right;
-        margin-top: 66px; margin-right: 69px;
-        width:248px; height:148px;
-        font-size: 0.2rem;
-        text-align:right;
-        color:var(--color-white);
-    }
-  }
+    
+  
   
   /* pc
   @media screen and (min-width:1441px) { 

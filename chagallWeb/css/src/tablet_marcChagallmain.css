@@ -1,7 +1,6 @@
 .tablet_view{
-    position:relative;
-    width:100%; height: 97.65625vw;
-    background-image: url(../../img/over-the-town-1918.jpg!Large.jpg);
+    height: 97.65625vw;
+    background-image: url("../../img/over-the-town-1918.jpg!Large.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 30% 40%;
@@ -15,32 +14,34 @@
     opacity:90%;
 } */
 .text_tb{
+    padding-top:3vw;
     width:83.984375vw; height:66.9921875vw;
-    margin-top: 75px; margin-left:80px;
+    margin-top: 7.324219vw; margin-left:7.8125vw;
     text-align:center;
     background-color: var(--color-gray);
-    line-height: 30px;
-    font-size: 2rem;
     line-height:60px;
+    font-size: 3.125vw;
     color:#fff;
     overflow:hidden;
 }
 
 .enter_tb{
-    margin-top:5.359375vw ; margin-left: 34.375vw;
-    width:31.25vw; height:8.3984375vw;
-    color:#fff; font-size: 3rem; text-align:center;
+    margin-top:3vw ; margin-left: 34.375vw;
+    width:31.25vw; height:9vw;
+    line-height:5rem;
+    color:#fff; font-size: 3rem; 
+    text-align:center;
     background-color:var(--color-gray);}
 
 /* =====================footer============================================== */
 .tablet_footer{
-    width: 1024px; height:300px;
+    width: 100%; height:29.296875vw;
     background-color: var(--color-gray);
 }
 .tablet_footer .footer_logo{
     float:left; 
-    margin-left:90px; margin-top: 66px;
-    width:159px; height: 154px;
+    margin-left:8.789vw; margin-top: 6.445312vw;
+    width:15.527344vw; height: 15.030962vw;
     background-image: url(../../icon/footer_logo.png);
     background-position: 50% 50%;
     background-size: contain;
@@ -48,9 +49,9 @@
 }
 .tablet_footer .address_01{
     float:right;
-    margin-top: 66px; margin-right: 69px;
-    width:248px; height:148px;
-    font-size: 2rem;
+    margin-top: 6.445312vw; margin-right: 6.738281vw;
+    width:auto; height:14.453125vw;
+    font-size: 1rem;
     text-align:right;
     color:var(--color-white);
 } 

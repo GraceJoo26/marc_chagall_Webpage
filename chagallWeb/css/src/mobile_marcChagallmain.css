@@ -29,8 +29,6 @@ hr{
 }
 /*----------------------480(#viewBox)--------------------*/
 
-
-
 .mobile_view {
     margin-top:1px;
     /* width:100vw;  */height: 120vw;
@@ -40,7 +38,7 @@ hr{
     opacity:90%;
 }
 .mobile_view>.text{
-/* display:none; */ 
+    /* display:none; */ 
     width:79.166667vw; min-height:57.6vw;
     margin-top: 12.166667vw; margin-left:10.416667vw;
     text-align:center;
@@ -85,7 +83,7 @@ hr{
     float:right;
     margin-right:12.5vw; margin-top: 16vw;
     width:50.208333vw; height:40vw;
-    font-size: 0.666667vw;
+    font-size: 0.3rem;
     text-align:right;
     color:var(--color-white);
 }
