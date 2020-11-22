@@ -27,8 +27,7 @@
 }
 
 .enter_tb{
-    position:absolute;
-    top:500px ; left: 34.375vw;
+    margin-top:5.359375vw ; margin-left: 34.375vw;
     width:31.25vw; height:8.3984375vw;
     color:#fff; font-size: 3rem; text-align:center;
     background-color:var(--color-gray);}
