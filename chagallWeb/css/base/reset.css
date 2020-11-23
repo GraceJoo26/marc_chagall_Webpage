@@ -59,7 +59,7 @@ legend { display: block; position: absolute; z-index: -1;
 input[type="text"], input[type="password"],input[type="search"],
 input[type="email"], input[type="url"], input[type="number"],
 input[type="tel"] {
-    border:1px solid #777; box-sizing: border-box;
+    border:2px solid #fff; box-sizing: border-box;
     text-indent:0.5rem; cursor: pointer;}
 
 button,
@@ -67,5 +67,5 @@ input[type="button"], input[type="submit"], input[type="reset"],
 input[type="image"] { margin:0; padding:0; border:0; 
     background-color: transparent; cursor:pointer; }
 
-textarea,select { margin:0; padding:0; border:1px solid #777; box-sizing:border-box;}
+textarea,select { margin:0; padding:0; border:1px solid #fff; box-sizing:border-box;}
 
