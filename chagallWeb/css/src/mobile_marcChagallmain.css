@@ -35,10 +35,20 @@ hr{
     background-image: url("../../img/over-the-town-1918.jpg!Large.jpg");
     background-size: cover;
     background-position: 25% 100%;
-    opacity:90%;
 }
-.mobile_view>.text{
-    /* display:none; */ 
+
+.mobile_view .mobile_action{
+    margin-top:1px;
+    display:none;
+    /* width:100vw;  */height: 120vw;
+    background-image: url("../../img/over-the-town-1918.jpg!Large.jpg");
+    background-size: cover;
+    background-position: 25% 100%;
+    opacity:70%;
+}
+
+.mobile_view>.mobile_text{
+    display:none;  
     width:79.166667vw; min-height:57.6vw;
     margin-top: 12.166667vw; margin-left:10.416667vw;
     text-align:center;
@@ -49,10 +59,10 @@ hr{
 
 }
 
-.mobile_view .enter{
+.mobile_view .mobile_enter{
     /* position:absolute;*/
     width:45.625vw; height: 13.6666667vw; 
-    /* display:none; */ 
+    display:none; 
     margin-top:10vw; margin-left:25vw;
     background-color: var(--color-gray);
     font-size:7vw;

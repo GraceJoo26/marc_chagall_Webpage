@@ -5,15 +5,17 @@
     background-size: cover;
     background-position: 30% 40%;
 }
-/* .tablet_view .action{
+.tablet_view .tablet_action{
+    display:none;
     width:100%; height: 1000px;
     background-image: url(../../img/over-the-town-1918.jpg!Large.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 30% 40%;
-    opacity:90%;
-} */
+    opacity:70%;
+} 
 .text_tb{
+    display:none;
     padding-top:3vw;
     width:83.984375vw; height:66.9921875vw;
     margin-top: 7.324219vw; margin-left:7.8125vw;
@@ -26,6 +28,7 @@
 }
 
 .enter_tb{
+    display:none;
     margin-top:3vw ; margin-left: 34.375vw;
     width:31.25vw; height:9vw;
     line-height:5rem;
