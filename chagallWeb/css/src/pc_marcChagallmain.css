@@ -1,23 +1,28 @@
 
 /*------------------------------pc_view-----------------------*/
 .pc_view{
-    width:100%; height: 69.444444vw;
+    position:relative;
+    width:100%; height: 80.444444vw;
+}
+
+.pc_view:before,
+.pc_view::before{
+    content:" "; display: block; 
+    width:100%; height: 100%;
     background-image: url(../../img/over-the-town-1918.jpg!Large.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 40% 0%;
-}
-.pc_view .pc_action{
-    width:100%; height: 1000px;
-    background-image: url(../../img/over-the-town-1918.jpg!Large.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 40% 0%;
-    opacity:70%;
-}
+    transition: all 500ms ease 3s;}
+.pc_view.action:before,
+.pc_view.action::before{ opacity: 0.7;}
+
+
 .pc_view .pc_text{
-    width:68.055556vw; height:45.972222vw;
-    margin-top: 3.75vw; margin-left:15.972222vw;
+    display:none;
+    position:absolute;
+    width:68.055556vw; height:40.972222vw;
+    top: 7vw; margin-left:15.972222vw;
     text-align:center;
     background-color: var(--color-gray);
     line-height: 2.7777778vw;
@@ -26,10 +31,13 @@
     text-align:center;
     line-height: 3rem;
     overflow:hidden;
+    padding-top:100px;
 }
 .pc_view .pc_marc_chagall{
+    display:none;
+    position: absolute;
     width: 30vw; height:5vw;
-    margin-left:34vw; margin-top: 3vw;
+    margin-left:34vw;top: 60vw;
     background-color: var(--color-gray);
     font-size: 3rem;
     color:var(--color-white);
@@ -37,8 +45,10 @@
     line-height: 3.75rem;
 }
 .pc_view .pc_enter{
+    display:none;
+    position: absolute;
     width:20vw; height:5vw;
-    margin-left: 39.583333vw; margin-top: 3vw;
+    margin-left: 39.583333vw; top: 70vw;
     background-color: var(--color-gray);
     font-size: 3rem;
     line-height: 3.75rem;
