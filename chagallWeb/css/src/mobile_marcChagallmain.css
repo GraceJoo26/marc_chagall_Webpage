@@ -4,15 +4,34 @@
 .mobile{
     width:100%; height:auto; background-color: #fff;
     max-width: 480px; padding-bottom: 1rem;}
-.mobile .nav{
+.mobile .navBox{
     float:left;
     margin-left:10.416667vw; margin-top: 7.7708333vw;
-    width:12.5vw; height: 9.375vw; 
-    background-image: url(../../icon/menu.png);
-    background-size: contain;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+    width:12.5vw; height: 9.375vw;
 }
+.menu_btn{
+    position:relative;
+    width:60px; height:45px; 
+    background-color: #fff;
+    z-index:500;   
+}
+.menu_btn,.menu_btn> button{position:relative; width:100%; height: 100%;}
+.menu_btn i{
+    position: absolute;
+    top:0; left:0; bottom:0; right:0; margin:auto; 
+    display:block; border-radius: 5px;
+    width:100%; height:1.041667vw; background-color: var(--color-gray);
+    opacity:1; transition:all 300ms ease;
+}
+
+.line_02{ transform:translateY(-20px);}
+.line_03{ transform:translateY(20px);}
+
+
+.menu_btn.on .line_01{opacity:0;}
+.menu_btn.on .line_02{transform:translateY(0) scaleX(1.3) rotate(50deg);}
+.menu_btn.on .line_03{transform:translateY(0) scaleX(1.3) rotate(-50deg);}
+
 .mobile h1{
     float:right;
     margin-right: 10.4166667vw; margin-top: 3.958333vw;
@@ -22,11 +41,25 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
 }
+
 hr{ 
     margin-left:10.4166667vw;
     width:79.166667vw; 
     border: solid  #6c6c6c;
+    border-radius: 5px;
 }
+.gnb{
+    display:none;
+    position:relative; bottom:8.333333vw; left:15.625vw;
+    z-index:100; width:45.625vw;  height:8.33333vw; 
+    background-color:var(--color-gray) 0.7; padding: 5px;
+    box-sizing: border-box; color:#6c6c6c;
+}
+.gnb li{position:absolute; width:12.5vw; height:8.333333vw; text-transform: uppercase;}
+.gnb li:nth-child(1){left:1.041667vw;}
+.gnb li:nth-child(2){left:21.875vw;}
+.gnb li:nth-child(3){left:34.375vw;}
+.gnb a{display:block; width:100%;}
 /*----------------------480(#viewBox)--------------------*/
 
 .mobile_view {
@@ -37,7 +70,7 @@ hr{
     background-position: 25% 100%;
 }
 
-.mobile_view .mobile_action{
+.mobile_view .on{
     margin-top:1px;
     display:none;
     /* width:100vw;  */height: 120vw;

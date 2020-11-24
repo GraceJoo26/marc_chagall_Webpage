@@ -5,6 +5,7 @@
     var nowW=deviceSize();
     var deviceType=['mobile','tablet','laptop','pc'];
     var url="./marcChagall_main/";
+    var body = $('body');
     var headBox=$('#headBox');
     var viewBox=$('#viewBox');
     var footBox=$('#footBox');
@@ -12,38 +13,62 @@
    
 
     var importMobile=function(){
-        headBox.append('<script src="../js/src/main/chagall_headBox_mobile.js"></script>');
-        viewBox.append('<script src="../js/src/main/chagall_viewBox_mobile.js"></script>');
-        footBox.append('<script src="../js/src/main/chagall_footBox_mobile.js"></script>');
+        // headBox.append('<script src="../jQuery/src/main/chagall_headBox_mobile.js"></script>');
+        // viewBox.append('<script src="../jQuery/src/main/chagall_viewBox_mobile.js"></script>');
+        // footBox.append('<script src="../jQuery/src/main/chagall_footBox_mobile.js"></script>');
+        setTimeout(function(){
+            body.append('<script src="../jQuery/src/main/chagall_headBox_mobile.js"></script>'+
+                        '<script src="../jQuery/src/main/chagall_viewBox_mobile.js"></script>'+
+                        '<script src="../jQuery/src/main/chagall_footBox_mobile.js"></script>');
+        }, 100);
        
     };
     var importTablet = function(){
-        viewBox.append('<script src="../js/src/main/chagall_viewBox_tablet.js"></script>');
-        footBox.append('<script src="../js/src/main/chagall_footBox_tablet.js"></script>');
-    };
+
+        setTimeout(function(){
+        body.append(
+            '<script src="../jQuery/src/main/chagall_viewBox_tablet.js"></script>'+
+            '<script src="../jQuery/src/main/chagall_footBox_tablet.js"></script>');
+    },100);
+};
+
+
     var importLaptop = function(){
-        viewBox.append('<script src="../js/src/main/chagall_viewBox_laptop.js"></script>');
-        footBox.append('<script src="../js/src/main/chagall_footBox_laptop.js"></script>');
-    }
+        setTimeout(function(){
+        body.append('<script src="../jQuery/src/main/chagall_viewBox_laptop.js"></script>'+
+                   '<script src="../jQuery/src/main/chagall_footBox_laptop.js"></script>');
+    },100);
+};
+
+
     var importPc = function(){
-        viewBox.append('<script src="../js/src/main/chagall_viewBox_pc.js"></script>');
-        footBox.append('<script src="../js/src/main/chagall_footBox_pc.js"></script>');
-    }
+        setTimeout(function(){
+            body.append('<script src="../jQuery/src/main/chagall_viewBox_pc.js"></script>'+
+                        '<script src="../jQuery/src/main/chagall_footBox_pc.js"></script>');
+    },100);
+};
 
 
     if(nowW===deviceType[0]){
-        headBox.load(url+'mobile_Chagall_main_headBox.html', importMobile);
-        viewBox.load(url+'mobile_Chagall_main_viewBox.html', importMobile );
-        footBox.load(url+'mobile_Chagall_main_footBox.html',importMobile);
+        headBox.load(url+'mobile_Chagall_main_headBox.html');
+        viewBox.load(url+'mobile_Chagall_main_viewBox.html');
+        footBox.load(url+'mobile_Chagall_main_footBox.html');
+        importMobile();
+
     }else if(nowW===deviceType[1]){
-        viewBox.load(url+'tablet_Chagall_main_viewBox.html',importTablet);
-        footBox.load(url+'tablet_Chagall_main_footBox.html',importTablet);
+        viewBox.load(url+'tablet_Chagall_main_viewBox.html');
+        footBox.load(url+'tablet_Chagall_main_footBox.html');
+        importTablet();
+
     }else if(nowW===deviceType[2]){
-        viewBox.load(url+'laptop_Chagall_main_viewBox.html',importLaptop);
-        footBox.load(url+'laptop_Chagall_main_footBox.html',importLaptop);
+        viewBox.load(url+'laptop_Chagall_main_viewBox.html');
+        footBox.load(url+'laptop_Chagall_main_footBox.html');
+        importLaptop();
+
     }else if(nowW===deviceType[3]){
-        viewBox.load(url+'pc_Chagall_main_viewBox.html',importPc);
-        footBox.load(url+'pc_Chagall_main_footBox.html',importPc);
+        viewBox.load(url+'pc_Chagall_main_viewBox.html');
+        footBox.load(url+'pc_Chagall_main_footBox.html');
+        importPc();
     }
 })(jQuery);
 
