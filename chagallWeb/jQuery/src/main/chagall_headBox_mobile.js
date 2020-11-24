@@ -15,11 +15,11 @@
     if(gnbStatus==='none'){
         
          gnb.stop().fadeIn();
-         menuBtn.addClass('on'); 
+         menuBtn.addClass('mobile_action'); 
     }else{
 
             gnb.stop().fadeOut();         
-            menuBtn.removeClass('on');
+            menuBtn.removeClass('mobile_action');
     } 
  });
 })(jQuery);
