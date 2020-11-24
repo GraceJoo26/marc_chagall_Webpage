@@ -2,7 +2,7 @@
     var mobileView=$('.mobile_view');
     var mobileText=mobileView.find('.mobile_text');
     var mobileEnter=mobileView.find('.mobile_enter');
-    var mobileOn;
+    
     var timed=900;
 
     

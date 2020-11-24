@@ -34,6 +34,7 @@
 
 
     var importLaptop = function(){
+       
         setTimeout(function(){
         body.append('<script src="../jQuery/src/main/chagall_viewBox_laptop.js"></script>'+
                    '<script src="../jQuery/src/main/chagall_footBox_laptop.js"></script>');
@@ -42,6 +43,7 @@
 
 
     var importPc = function(){
+        
         setTimeout(function(){
             body.append('<script src="../jQuery/src/main/chagall_viewBox_pc.js"></script>'+
                         '<script src="../jQuery/src/main/chagall_footBox_pc.js"></script>');

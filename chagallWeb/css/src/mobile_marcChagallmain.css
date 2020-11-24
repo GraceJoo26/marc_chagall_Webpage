@@ -62,9 +62,10 @@ hr{
 .gnb a{display:block; width:100%;}
 /*----------------------480(#viewBox)--------------------*/
 
-.mobile_view {position: relative;
+.mobile_view {
+    position: relative;
     margin-top:1px;
-    /* width:100vw;  */height: 120vw;   
+    height: 120vw;   
 }
 
 .mobile_view:before,
@@ -78,15 +79,7 @@ hr{
 .mobile_view.action:before,
 .mobile_view.action::before{ opacity: 0.7;}
 
-.on{
-    display:block;
-    margin-top:1px;
-    /* width:100vw;  */height: 120vw;
-    background-image: url("../../img/over-the-town-1918.jpg!Large.jpg");
-    background-size: cover;
-    background-position: 25% 100%;
-    opacity:70%;
-}
+
 
 .mobile_text{
     display:none;
