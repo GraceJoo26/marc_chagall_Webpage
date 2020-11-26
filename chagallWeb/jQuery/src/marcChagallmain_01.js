@@ -52,24 +52,24 @@
 
 
     if(nowW===deviceType[0]){
-        headBox.load(url+'mobile_Chagall_main_headBox.html');
-        viewBox.load(url+'mobile_Chagall_main_viewBox.html');
-        footBox.load(url+'mobile_Chagall_main_footBox.html');
+        headBox.load(url+'chagall_main_headBox_mobile.html');
+        viewBox.load(url+'chagall_main_viewBox_mobile.html');
+        footBox.load(url+'chagall_main_footBox_mobile.html');
         importMobile();
 
     }else if(nowW===deviceType[1]){
-        viewBox.load(url+'tablet_Chagall_main_viewBox.html');
-        footBox.load(url+'tablet_Chagall_main_footBox.html');
+        viewBox.load(url+'chagall_main_viewBox_tablet.html');
+        footBox.load(url+'chagall_main_footBox_tablet.html');
         importTablet();
 
     }else if(nowW===deviceType[2]){
-        viewBox.load(url+'laptop_Chagall_main_viewBox.html');
-        footBox.load(url+'laptop_Chagall_main_footBox.html');
+        viewBox.load(url+'chagall_main_viewBox_laptop.html');
+        footBox.load(url+'chagall_main_footBox_laptop.html');
         importLaptop();
 
     }else if(nowW===deviceType[3]){
-        viewBox.load(url+'pc_Chagall_main_viewBox.html');
-        footBox.load(url+'pc_Chagall_main_footBox.html');
+        viewBox.load(url+'chagall_main_viewBox_pc.html');
+        footBox.load(url+'chagall_main_footBox_pc.html');
         importPc();
     }
 })(jQuery);

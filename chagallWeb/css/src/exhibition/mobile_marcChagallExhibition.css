@@ -1,4 +1,5 @@
 
+
 /*------------------480(#headBox)----------------------*/
 
 .mobile{
@@ -36,7 +37,7 @@
     float:right;
     margin-right: 10.4166667vw; margin-top: 3.958333vw;
     width:12.5vw; height: 13.125vw;
-    background-image: url(../../icon/logo_480.png);
+    background-image: url("../../../icon/logo_480.png");
     background-size: contain;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -60,55 +61,73 @@ hr{
 .gnb li:nth-child(2){left:21.875vw;}
 .gnb li:nth-child(3){left:34.375vw;}
 .gnb a{display:block; width:100%;}
-/*----------------------480(#viewBox)--------------------*/
-
-.mobile_view {
-    position: relative;
-    margin-top:1px;
-    height: 120vw;   
+/*-------------------------------480px pictureBox----------------------------*/
+.m_wrap{
+    width:100%; height:1000px;
+    background-color: #fff;
+    position:relative;
 }
-
-.mobile_view:before,
-.mobile_view::before{
-    content:" "; display: block; width: 100%; height: 100%;
-    position: absolute; z-index:0;
-    background-image: url("../../img/over-the-town-1918.jpg!Large.jpg");
-    background-size: cover;
-    background-position: 25% 100%;
-    transition: all 500ms ease 1s;}
-.mobile_view.action:before,
-.mobile_view.action::before{ opacity: 0.7;}
-
-
-
-.mobile_text{
-    display:none;
-    position:absolute;
-    width:79.166667vw; min-height:57.6vw;
-    top: 12.166667vw; margin-left:10.416667vw;
-    text-align:center;
+.m_PE_wrap{
+    margin-top:11.875vw;
+    margin-left:10.416667vw;
+    width:79.16667vw;
+    height:79.1667vw;
     background-color: var(--color-gray);
-    line-height: 6.25vw;
-    color:#fff;
-    font-size:3.333333333333vw;
-
+    
 }
-
-.mobile_enter{
-    display:none; 
+.m_pic_wrap{
+    width:66.6667vw; height:79.1667vw;
+    background-color: #fff;
+    margin-left:6.25vw;
+    overflow:hidden;
+}
+.button{
     position:absolute;
-    width:45.625vw; height: 13.6666667vw; 
-    top:90vw; margin-left:25vw;
-    background-color: var(--color-gray);
-    font-size:7vw;
-    color:#fff;
+    top:32.083333vw;
+    width:79.1667vw; height:8.75vw;
+}
+.button button{
+    font-size: 3rem;
+    color:var(--color-white);
     text-align: center;
-
+}
+.m_next{
+   float:right;
+}
+.m_next:hover{
+    color:rgb(185, 189, 182);
+}
+.m_prev:hover{
+    color:rgb(185, 189, 182);
+}
+.m_prev{
+    float:left;
 }
 
+.m_pic_wrap > .mob_frame{
+   width:500%;
+   height:79.1667vw;
+   margin:auto;
+}
+.mob_frame li{
+   float:left;
+   width:20%;
+   height:79.1667vw;
+   background-position: 50% 50%;
+   background-repeat: no-repeat;
+   background-size: contain;
+   
+}
 
-/*----------------------480(#footBox)--------------------*/
+.mob_pic_01{background-image: url(../../../img/marc_chagall_me_and_village.jpg);}
+.mob_pic_02{background-image: url(../../../img/Marc_Chagall_The_Birthday_1915.png);}
+.mob_pic_03{background-image: url(../../../img/over-the-town-1918.jpg!Large.jpg);}
+.mob_pic_04{background-image: url(../../../img/paravent.jpeg);}
+.mob_pic_05{background-image: url(../../../img/romeo_and_juliet.jpeg);}
 
+
+
+/*--------------------------------480px footer------------------*/
 .mobile_footer {
     min-width:260px;
     width:100%; height:62.5vw;
@@ -119,7 +138,7 @@ hr{
     float:left; 
     margin-left:14.375vw; margin-top: 18.75vw;
     width:21.875vw; height: 22.083333vw;
-    background-image: url(../../icon/footer_logo.png);
+    background-image: url("../../../icon/footer_logo.png");
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -132,4 +151,3 @@ hr{
     text-align:right;
     color:var(--color-white);
 }
-

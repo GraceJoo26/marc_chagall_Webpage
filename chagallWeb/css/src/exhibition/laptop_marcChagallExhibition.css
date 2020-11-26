@@ -1,0 +1,111 @@
+/*-----------------1440 headBox-----------------*/
+.laptop{
+    width:100%; height:auto; background-color: #fff;
+    max-width:1440px;padding-bottom: 1rem;
+}
+.laptop h1{
+    float:left;
+    margin-left:11.805556vw;
+    width:7.5vw; height:6.944444vw;
+    background-image: url(../../../icon/logo_480.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+}
+.lap_navBox{
+    float:right;
+    margin-right:11.111111vw;
+    width:48.61111vw; height:6.94444vw;
+}
+
+.lap_navBox > .lap_menu{
+    width:inherit; height: inherit;
+}
+.lap_menu li{
+    float:left;
+    width:148x; height:6.944444vw;
+    margin-left:2.2vw;
+    margin-top:1.2vw;
+    font-weight: bold;
+    font-size:2rem;
+    color:var(--color-gray);
+    line-height: 6rem;
+    text-transform: uppercase;
+    text-align:cetner;
+    padding: 5px;
+}
+.lap_menu li:nth-child(2){
+    text-align:right;
+}
+.lap_menu li:nth-child(3){
+    text-align:right;
+}
+
+.lap_menu li:last-child{
+    float:right;
+    width:3.472222vw; height:6.9444vw;
+    font-size:3rem;
+    text-align:right;
+}
+
+.three{
+    margin-left:11.805556vw;
+    width:76.3888889vw;
+    color:var(--color-gray);
+    text-align:center;
+}
+
+
+
+/*--------------------------1440 #pictureBox-----------------*/
+/*--------------------------1440 #footBox--------------------*/
+.laptop_footer{
+    position:relative;
+    width:100%; height:300px;
+    background-color: var(--color-gray);
+}
+.laptop_footer .footer_logo{
+    float:left; 
+    margin-left:6.25vw; margin-top: 4.5833333vw;
+    width:11.041667vw; height:10.694444vw;
+    background-image: url("../../../icon/footer_logo.png");
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.laptop_footer .address_01{
+    float:left;
+    margin-top: 6.583333vw; margin-left:6vw;
+    width:46.1944444vw; height:10.277778vw;
+    font-size: 1rem;
+    text-align:center;
+    color:var(--color-white);
+}
+
+.email > .laptop_email{
+    position:absolute;
+    top:4vw; left:73vw;
+    width:27.083333vw; height:9.72222222vw;
+}
+
+#userId{
+    width: 20.1388889vw; height: 2.430556vw;
+    background-color: #fff;
+}
+
+#text_01{
+    margin-top: 1vw;
+    width:20.1388889vw; height:13vw;
+    background-color: #fff;
+}
+.send{
+    position:absolute;
+    top:16.6vw; left:88vw;
+    width:4.16667vw; height:2.777778vw;
+    background-color: var(--color-gray);
+    text-align:center;
+    line-height: 2rem;
+    font-size: 1rem;
+    color:#fff;
+}
