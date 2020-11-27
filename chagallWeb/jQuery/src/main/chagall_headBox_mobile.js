@@ -22,4 +22,6 @@
             menuBtn.removeClass('mobile_action');
     } 
  });
+
+ 
 })(jQuery);

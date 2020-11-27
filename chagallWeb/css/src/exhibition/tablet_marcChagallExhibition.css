@@ -59,7 +59,116 @@
 .tb_gnb li:nth-child(2){left:20.575vw;}
 .tb_gnb li:nth-child(3){left:34.375vw;}
 .tb_gnb a{display:block; width:100%;}
+/*----------------10249(#pictureBox)----------------------*/
 
+.t_wrap{
+    width:100%; height:1000px;
+    background-color: #fff;
+    overflow:hidden;
+    position:relative;
+}
+.t_PE_wrap{
+    margin-top:11.875vw;
+    margin-left:10.416667vw;
+    width:79.16667vw;
+    height:79.1667vw;
+    background-color: var(--color-gray);
+    
+}
+.t_pic_wrap{
+    width:66.6667vw; height:79.1667vw;
+    background-color: #fff;
+    margin-left:6.25vw;
+    overflow:hidden;
+}
+.t_button{
+    position:absolute;
+    top:50.083333vw;
+    width:79.1667vw; height:8.75vw;
+}
+.t_button button{
+    font-size: 5rem;
+    color:var(--color-white);
+    text-align: center;
+}
+.t_next{
+   float:right;
+}
+.t_next.on{
+    color:rgb(167, 167, 167);
+}
+.t_prev.on{
+    color:rgb(167, 167, 167);
+}
+.t_prev{
+    float:left;
+}
+
+.t_pic_wrap > .mob_frame{
+   width:500%;
+   height:79.1667vw;
+   margin:auto;
+}
+.tab_frame li{
+   float:left;
+   width:20%;
+   height:79.1667vw;
+   background-position: 50% 50%;
+   background-repeat: no-repeat;
+   background-size: contain;
+   
+}
+
+.tab_pic_01{background-image: url(../../../img/marc_chagall_me_and_village.jpg);}
+.tab_pic_02{background-image: url(../../../img/Marc_Chagall_The_Birthday_1915.png);}
+.tab_pic_03{background-image: url(../../../img/over-the-town-1918.jpg);}
+.tab_pic_04{background-image: url(../../../img/whiteCross.jpg);}
+.tab_pic_05{background-image: url(../../../img/selfportraitWith5fingers.jpg);}
+
+.t_explainwrap{
+    width:500%; height:79.166667vw;
+    padding:50px; 
+    text-align:left;
+    overflow:hidden;
+
+}
+.t_explainWrap.divWrap {
+    margin-left:100px;
+}
+
+.name {
+    font-size: 1.6rem;   
+}
+.artist{
+    font-size:1.1rem;
+    margin-top: 10px;
+}
+.year{
+    font-size:1.1rem;
+    margin-top: 10px;
+}
+.size{
+    font-size:1.1rem;
+    margin-top: 10px;
+}
+.ingredient{
+    font-size:1.1rem;
+    margin-top: 10px;
+}
+.age{
+    font-size:1.1rem;
+    margin-top: 10px;
+}
+.location{
+    font-size:1.1rem;
+    margin-top: 10px;
+}
+.content{
+    margin-top: 10px;
+    font-size:0.87rem;
+    line-height:1.5rem;
+    width:79.166667vw;
+}
 /*-----------------1024(#footer)------------------------------*/
 
 .tablet_footer{

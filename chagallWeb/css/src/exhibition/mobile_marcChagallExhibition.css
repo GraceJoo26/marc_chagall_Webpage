@@ -65,6 +65,7 @@ hr{
 .m_wrap{
     width:100%; height:1000px;
     background-color: #fff;
+    overflow:hidden;
     position:relative;
 }
 .m_PE_wrap{
@@ -83,22 +84,22 @@ hr{
 }
 .button{
     position:absolute;
-    top:32.083333vw;
+    top:45.083333vw;
     width:79.1667vw; height:8.75vw;
 }
 .button button{
-    font-size: 3rem;
+    font-size: 2.3rem;
     color:var(--color-white);
     text-align: center;
 }
 .m_next{
    float:right;
 }
-.m_next:hover{
-    color:rgb(185, 189, 182);
+.m_next.on{
+    color:rgb(167, 167, 167);
 }
-.m_prev:hover{
-    color:rgb(185, 189, 182);
+.m_prev.on{
+    color:rgb(167, 167, 167);
 }
 .m_prev{
     float:left;
@@ -121,10 +122,54 @@ hr{
 
 .mob_pic_01{background-image: url(../../../img/marc_chagall_me_and_village.jpg);}
 .mob_pic_02{background-image: url(../../../img/Marc_Chagall_The_Birthday_1915.png);}
-.mob_pic_03{background-image: url(../../../img/over-the-town-1918.jpg!Large.jpg);}
-.mob_pic_04{background-image: url(../../../img/paravent.jpeg);}
-.mob_pic_05{background-image: url(../../../img/romeo_and_juliet.jpeg);}
+.mob_pic_03{background-image: url(../../../img/over-the-town-1918.jpg);}
+.mob_pic_04{background-image: url(../../../img/whiteCross.jpg);}
+.mob_pic_05{background-image: url(../../../img/selfportraitWith5fingers.jpg);}
 
+.m_explainwrap{
+    width:500%; height:79.166667vw;
+    padding:50px; 
+    text-align:left;
+    overflow:hidden;
+
+}
+.m_explainWrap.divWrap {
+    margin-left:100px;
+}
+
+.name {
+    font-size: 1.6rem;   
+}
+.artist{
+    font-size:1.1rem;
+    margin-top: 10px;
+}
+.year{
+    font-size:1.1rem;
+    margin-top: 10px;
+}
+.size{
+    font-size:1.1rem;
+    margin-top: 10px;
+}
+.ingredient{
+    font-size:1.1rem;
+    margin-top: 10px;
+}
+.age{
+    font-size:1.1rem;
+    margin-top: 10px;
+}
+.location{
+    font-size:1.1rem;
+    margin-top: 10px;
+}
+.content{
+    margin-top: 10px;
+    font-size:0.87rem;
+    line-height:1.5rem;
+    width:79.166667vw;
+}
 
 
 /*--------------------------------480px footer------------------*/

@@ -11,7 +11,7 @@
 .laptop_view::before{
     content:" "; display: block; 
     width:100%; height: 1000px;
-    background-image: url("../../../img/over-the-town-1918.jpg!Large.jpg");
+    background-image: url("../../../img/over-the-town-1918.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 40% 0%;
