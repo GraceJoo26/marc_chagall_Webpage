@@ -62,25 +62,32 @@
 /*----------------10249(#pictureBox)----------------------*/
 
 .t_wrap{
-    width:100%; height:1000px;
+    width:100%; height:2000px;
     background-color: #fff;
     overflow:hidden;
     position:relative;
 }
 .t_PE_wrap{
-    margin-top:11.875vw;
-    margin-left:10.416667vw;
-    width:79.16667vw;
-    height:79.1667vw;
-    background-color: var(--color-gray);
     
+    margin-top:13.671875vw;
+    margin-left:7.59375vw;
+    width:84.720625vw;
+    height:79.6875vw;
+    background-color: var(--color-gray);
 }
 .t_pic_wrap{
-    width:66.6667vw; height:79.1667vw;
+    position:absolute;
+    left:12.253906vw;
+    top:23.4375vw;
+
+    width:74.8555469vw;
+    height:59.863281vw;
     background-color: #fff;
-    margin-left:6.25vw;
+    /* margin-top: 9.765625vw; */
+    /* margin-left:3.95531vw; */
     overflow:hidden;
 }
+.t
 .t_button{
     position:absolute;
     top:50.083333vw;
@@ -104,26 +111,41 @@
     float:left;
 }
 
-.t_pic_wrap > .mob_frame{
+.t_pic_wrap > .tab_frame{
    width:500%;
-   height:79.1667vw;
+   height:79.6875vw;
    margin:auto;
 }
 .tab_frame li{
    float:left;
    width:20%;
-   height:79.1667vw;
-   background-position: 50% 50%;
+   height:79.6875vw;
+   
    background-repeat: no-repeat;
    background-size: contain;
    
 }
 
-.tab_pic_01{background-image: url(../../../img/marc_chagall_me_and_village.jpg);}
-.tab_pic_02{background-image: url(../../../img/Marc_Chagall_The_Birthday_1915.png);}
-.tab_pic_03{background-image: url(../../../img/over-the-town-1918.jpg);}
-.tab_pic_04{background-image: url(../../../img/whiteCross.jpg);}
-.tab_pic_05{background-image: url(../../../img/selfportraitWith5fingers.jpg);}
+.tab_pic_01{
+    background-image: url(../../../img/marc_chagall_me_and_village.jpg);
+    background-position: 50% 50%;
+}
+.tab_pic_02{
+    background-image: url(../../../img/Marc_Chagall_The_Birthday_1915.png);
+    background-position: 0 0;
+}
+.tab_pic_03{
+    background-image: url(../../../img/over-the-town-1918.jpg);
+    background-position: 0 4.5%;
+}
+.tab_pic_04{
+    background-image: url(../../../img/whiteCross.jpg);
+    background-position: 50% 50%;
+}
+.tab_pic_05{
+    background-image: url(../../../img/selfportraitWith5fingers.jpg);
+    background-position: 50% 50%;
+}
 
 .t_explainwrap{
     width:500%; height:79.166667vw;
@@ -133,11 +155,11 @@
 
 }
 .t_explainWrap.divWrap {
-    margin-left:100px;
+    padding-left:100px;
 }
 
 .name {
-    font-size: 1.6rem;   
+    font-size: 2rem;   
 }
 .artist{
     font-size:1.1rem;
