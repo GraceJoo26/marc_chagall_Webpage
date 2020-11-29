@@ -79,7 +79,6 @@
     position:absolute;
     left:12.253906vw;
     top:23.4375vw;
-
     width:74.8555469vw;
     height:59.863281vw;
     background-color: #fff;
@@ -87,15 +86,18 @@
     /* margin-left:3.95531vw; */
     overflow:hidden;
 }
-.t
+
 .t_button{
     position:absolute;
-    top:50.083333vw;
+    z-index: 999;
+    bottom:102.3vw; 
+    left:10vw;
     width:79.1667vw; height:8.75vw;
 }
 .t_button button{
-    font-size: 5rem;
+    font-size: 4rem;
     color:var(--color-white);
+    
     text-align: center;
 }
 .t_next{
@@ -149,46 +151,47 @@
 
 .t_explainwrap{
     width:500%; height:79.166667vw;
-    padding:50px; 
+    padding:50px;
+    margin-left:25px; 
     text-align:left;
     overflow:hidden;
 
 }
 .t_explainWrap.divWrap {
-    padding-left:100px;
+    margin-left:100px;
 }
 
 .name {
-    font-size: 2rem;   
+    font-size: 3rem;   
 }
 .artist{
-    font-size:1.1rem;
+    font-size:2rem;
     margin-top: 10px;
 }
 .year{
-    font-size:1.1rem;
+    font-size:2rem;
     margin-top: 10px;
 }
 .size{
-    font-size:1.1rem;
+    font-size:2rem;
     margin-top: 10px;
 }
 .ingredient{
-    font-size:1.1rem;
+    font-size:2rem;
     margin-top: 10px;
 }
 .age{
-    font-size:1.1rem;
+    font-size:2rem;
     margin-top: 10px;
 }
 .location{
-    font-size:1.1rem;
+    font-size:2rem;
     margin-top: 10px;
 }
 .content{
-    margin-top: 10px;
-    font-size:0.87rem;
-    line-height:1.5rem;
+    margin-top: 3rem;
+    font-size:1.4rem;
+    line-height:3rem;
     width:79.166667vw;
 }
 /*-----------------1024(#footer)------------------------------*/
