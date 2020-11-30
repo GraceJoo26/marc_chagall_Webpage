@@ -37,7 +37,7 @@ win.on('resize',function(){
         
 }});
 
-console.log(deviceCheck);
+
 return resultDevice;
 })(jQuery);
 return resultDevice;
