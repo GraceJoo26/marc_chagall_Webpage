@@ -2,7 +2,7 @@
 
 .tablet{
     width:100%; height:auto; background-color: #fff;
-    max-width: 1440px; padding-bottom: 1rem;}
+    max-width: 1024x; padding-bottom: 1rem;}
 .tablet h1{
         float:right;
         margin-right:8.203125vw;margin-top: 1.960156vw;
@@ -77,7 +77,7 @@
 }
 .t_pic_wrap{
     position:absolute;
-    left:12.253906vw;
+    left:12.353906vw;
     top:23.4375vw;
     width:74.8555469vw;
     height:59.863281vw;
@@ -90,9 +90,9 @@
 .t_button{
     position:absolute;
     z-index: 999;
-    bottom:102.3vw; 
-    left:10vw;
-    width:79.1667vw; height:8.75vw;
+    bottom:135vw; 
+    left:8.3vw;
+    width:83vw; height:8.75vw;
 }
 .t_button button{
     font-size: 4rem;
@@ -116,7 +116,7 @@
 .t_pic_wrap > .tab_frame{
    width:500%;
    height:79.6875vw;
-   margin:auto;
+   right:24vw;
 }
 .tab_frame li{
    float:left;

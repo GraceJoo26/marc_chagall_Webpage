@@ -2,6 +2,7 @@
 .laptop{
     width:100%; height:auto; background-color: #fff;
     max-width:1440px;padding-bottom: 1rem;
+    min-width:1030px;
 }
 .laptop h1{
     float:left;
@@ -127,6 +128,14 @@
     background-image: url(../../../img/marc_chagall_me_and_village.jpg);
     background-position: 50% 50%;
 }
+.lap_pic_02{
+    background-image: url(../../../img/selfportraitWith5fingers.jpg);
+    background-position: 50% 50%;
+}
+.lap_pic_03{
+    background-image: url(../../../img/paris_overTheWindow.jpg);
+    background-position: 50% 2%;
+}
 .lap_pic_04{
     background-image: url(../../../img/Marc_Chagall_The_Birthday_1915.png);
     background-position: 50% 28%;
@@ -139,36 +148,29 @@
     background-image: url(../../../img/whiteCross.jpg);
     background-position: 50% 50%;
 }
-.lap_pic_02{
-    background-image: url(../../../img/selfportraitWith5fingers.jpg);
+.lap_pic_07{
+    background-image: url(../../../img/winePortrait.jpg);
     background-position: 50% 50%;
 }
-.lap_pic_03{
-    background-image: url(../../../img/paris_overTheWindow.jpg);
-    background-position: 50% 2%;
+.lap_pic_08{
+    background-image: url(../../../img/walk.jpg);
+    background-position: 50% 0%;
+}
+.lap_pic_09{
+    background-image: url(../../../img/artist.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
 }
 .lap_pic_10{
     background-image: url(../../../img/bride&broomOfEiffelTower.jpg);
     background-position: 50% 50%;
 }
-.lap_pic_07{
-    background-image: url(../../../img/winePortrait.jpg);
-    
-    background-position: 50% 50%;
-}
+
 .lap_pic_11{
     background-image: url(../../../img/circus_in_bluelight.jpg);
     background-position: 50% 50%;
 }
-.lap_pic_08{
-    background-image: url(../../../img/artist.jpg);
-    background-position: 50% 50%;
-    background-size: cover;
-}
-.lap_pic_09{
-    background-image: url(../../../img/walk.jpg);
-    background-position: 50% 0%;
-}
+
 .lap_pic_12{
     background-image: url(../../../img/the_bride.jpg);
     background-position: 50% 50%;

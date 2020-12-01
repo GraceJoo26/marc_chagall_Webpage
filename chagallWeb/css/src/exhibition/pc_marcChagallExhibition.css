@@ -1,3 +1,4 @@
+
 .pc{
     width:100%; height:auto; background-color: #fff;
     max-width:1920px;padding-bottom: 1rem;
@@ -56,6 +57,251 @@
 }
 /*------------------1920 pictureBox-----------------------*/
 
+.pc_wrap{
+    margin:auto;
+    width:100%; height:3000px;
+    background-color: #fff;
+    overflow:hidden;
+    position:relative;
+}
+.pc_PE_wrap{
+    margin-top:5.902778vw;
+    margin-left:10.316667vw;
+    width:80.3664583vw;
+    height:79.6875vw;
+    background-color: var(--color-gray);
+}
+.pc_pic_wrap{
+    position:absolute;
+    left:13.75vw;
+    top:10.35vw;
+    width:72.430556vw;
+    height:70.6875vw;
+    background-color: #fff;
+    /* margin-top: 9.765625vw; */
+    /* margin-left:3.95531vw; */
+    overflow:hidden;
+}
+
+.pc_button{
+    position:absolute;
+    z-index: 999;
+    top:43vw; 
+    left:10.4vw;
+    width:79.1667vw; height:8.75vw;
+}
+.pc_button button{
+    font-size: 5rem;
+    color:var(--color-white);
+    text-align: center;
+}
+.pc_next{
+   float:right;
+}
+.pc_next.on{
+    color:rgb(167, 167, 167);
+}
+.pc_prev.on{
+    color:rgb(167, 167, 167);
+}
+.pc_prev{
+    float:left;
+}
+
+.pc_pic_wrap > .pc_frame{
+   width:500%;
+   height:79.6875vw;
+   margin:auto;
+}
+.pc_frame li{
+   float:left;
+   width:20%;
+   height:79.6875vw;
+   
+   background-repeat: no-repeat;
+   background-size: contain;
+   
+}
+
+.pc_pic_01{
+    background-image: url(../../../img/marc_chagall_me_and_village.jpg);
+    background-position: 50% 50%;
+}
+.pc_pic_04{
+    background-image: url(../../../img/Marc_Chagall_The_Birthday_1915.png);
+    background-position: 50% 28%;
+}
+.pc_pic_05{
+    background-image: url(../../../img/over-the-town-1918.jpg);
+    background-position: 50% 28%;
+}
+.pc_pic_06{
+    background-image: url(../../../img/whiteCross.jpg);
+    background-position: 50% 50%;
+}
+.pc_pic_02{
+    background-image: url(../../../img/selfportraitWith5fingers.jpg);
+    background-position: 50% 50%;
+}
+.pc_pic_03{
+    background-image: url(../../../img/paris_overTheWindow.jpg);
+    background-position: 50% 2%;
+}
+.pc_pic_10{
+    background-image: url(../../../img/bride&broomOfEiffelTower.jpg);
+    background-position: 50% 50%;
+}
+.pc_pic_07{
+    background-image: url(../../../img/winePortrait.jpg);
+    
+    background-position: 50% 50%;
+}
+.pc_pic_11{
+    background-image: url(../../../img/circus_in_bluelight.jpg);
+    background-position: 50% 50%;
+}
+.pc_pic_08{
+    background-image: url(../../../img/artist.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.pc_pic_09{
+    background-image: url(../../../img/walk.jpg);
+    background-position: 50% 0%;
+}
+.pc_pic_12{
+    background-image: url(../../../img/the_bride.jpg);
+    background-position: 50% 50%;
+}
+
+.pc_text_wrap{
+    float:left;
+    height:59.583333vw;
+}
+.pc_divWrap{
+    float:left;
+    margin-left:10.85vw;
+    width:50vw;
+    height:59.583333vw;
+}
+.pc_divWrap>dl{
+    width:40.902778vw;
+    height:59.583333vw;
+}
+
+.pc_divWrap>dl >dt{
+    width:auto;
+    height:auto;
+}
+.pc_divWrap>dl >dd{
+    
+    height:auto;
+}
+.pc_name {
+    margin-top:20px;
+    font-size: 3.2rem;
+    font-weight: bold;   
+}
+.pc_subtitle{
+    font-size:2.5rem;
+    font-weight: bold;
+}
+.pc_artist{
+    font-size:2rem;
+    margin-top: 20px;
+}
+.pc_year{
+    font-size:2rem;
+    margin-top: 20px;
+}
+.pc_size{
+    font-size:2rem;
+    margin-top: 20px;
+}
+.pc_ingredient{
+    font-size:2rem;
+    margin-top: 20px;
+}
+.pc_age{
+    font-size:2rem;
+    margin-top: 20px;
+}
+.pc_location{
+    font-size:2rem;
+    margin-top: 20px;
+}
+.pc_content{
+    width:50vw;
+    margin-top: 40px;
+    font-size:1.9rem;
+    line-height:3.8rem;
+
+}
+
+.pc_ageline{
+    position:relative;
+    z-index: 9999;
+    top:9vw;
+    float:right;
+    margin-right:300px;
+}
+
+.pc_ageline >.pc_line{
+    position:absolute;
+    z-index: 99999;
+    width:2px;
+    height:50.805555vw;
+    background-color:var(--color-gray);
+}
+.pc_line li {
+    display:line-block;
+    width:40px;
+    height:40px;
+    margin-top:2.4vw;
+    margin-left: -18.8px;
+    background-color: var(--color-gray);
+    border-radius: 100%;
+}
+.pc_line li a{
+    display:block;
+    width:100%;
+    height:100%;
+}
+.pc_line li.action a{
+    width:50px; height:50px;
+    border-radius: 100%;
+    margin-left:-0.338vw;
+    background-color: #161616;
+}
+.pc_line li:nth-child(1){
+    margin-top:0;
+}
+
+.history li{
+    position:absolute;
+    z-index:10000;
+    font-size:1.5rem;
+    left:3rem;
+}
+.history li:nth-child(2){
+    top:93px;
+}
+.history li:nth-child(3){
+    top:265px;
+}
+.history li:nth-child(4){
+    top:350px;
+}
+.history li:nth-child(5){
+    top:698px;
+}
+.history li:nth-child(6){
+    top:780px;
+}
+
+.history li:nth-child(7){
+    top:865px;
+}
 
 
 

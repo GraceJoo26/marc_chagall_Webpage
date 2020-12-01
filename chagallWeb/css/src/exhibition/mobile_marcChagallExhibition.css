@@ -120,11 +120,26 @@ hr{
    
 }
 
-.mob_pic_01{background-image: url(../../../img/marc_chagall_me_and_village.jpg);}
-.mob_pic_02{background-image: url(../../../img/Marc_Chagall_The_Birthday_1915.png);}
-.mob_pic_03{background-image: url(../../../img/over-the-town-1918.jpg);}
-.mob_pic_04{background-image: url(../../../img/whiteCross.jpg);}
-.mob_pic_05{background-image: url(../../../img/selfportraitWith5fingers.jpg);}
+.mob_pic_01{
+    background-image: url(../../../img/marc_chagall_me_and_village.jpg);
+    background-position: 50% 50%;
+}
+.mob_pic_02{
+    background-image: url(../../../img/selfportraitWith5fingers.jpg);
+    background-position: 50% 50%;
+}
+.mob_pic_03{
+    background-image: url(../../../img/paris_overTheWindow.jpg);
+    background-position: 50% 2%;
+}
+.mob_pic_04{
+    background-image: url(../../../img/Marc_Chagall_The_Birthday_1915.png);
+    background-position: 50% 28%;
+}
+.mob_pic_05{
+    background-image: url(../../../img/over-the-town-1918.jpg);
+    background-position: 50% 28%;
+}
 
 .m_explainwrap{
     width:500%; height:79.166667vw;
@@ -137,34 +152,34 @@ hr{
     margin-left:100px;
 }
 
-.name {
+.m_name {
     font-size: 1.6rem;   
 }
-.artist{
+.m_artist{
     font-size:1.1rem;
     margin-top: 10px;
 }
-.year{
+.m_year{
     font-size:1.1rem;
     margin-top: 10px;
 }
-.size{
+.m_size{
     font-size:1.1rem;
     margin-top: 10px;
 }
-.ingredient{
+.m_ingredient{
     font-size:1.1rem;
     margin-top: 10px;
 }
-.age{
+.m_age{
     font-size:1.1rem;
     margin-top: 10px;
 }
-.location{
+.m_location{
     font-size:1.1rem;
     margin-top: 10px;
 }
-.content{
+.m_content{
     margin-top: 10px;
     font-size:0.87rem;
     line-height:1.5rem;
