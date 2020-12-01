@@ -142,7 +142,7 @@ hr{
 }
 
 .m_explainwrap{
-    width:500%; height:79.166667vw;
+    width:500%; 
     padding:50px; 
     text-align:left;
     overflow:hidden;
@@ -181,6 +181,7 @@ hr{
 }
 .m_content{
     margin-top: 10px;
+    height:auto;
     font-size:0.87rem;
     line-height:1.5rem;
     width:79.166667vw;
