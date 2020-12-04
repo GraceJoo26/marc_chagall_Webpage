@@ -70,9 +70,18 @@ hr{
 
 
 /*-------------------------------480px viewer-------------------------------*/
+#viewBox:before,
+#viewBox::before{
+    content:" ";
+    position:relative;
+    width:100%; height:auto; display:block;
+}
+
+#viewBox.action:before,
+#viewBox.ation::before{ opacity:50%; background-color: #cdc;}
 .m_wrap{
     margin-top:3vw;
-    width:100%; height:105.208333vw;
+    width:100%; height:110.208333vw;
 }
 
 .m_searching{
@@ -147,8 +156,8 @@ input::placeholder{
 
 .m_goods{width: 100%; height:229.583333vw;} 
 .m_hr{width:20.8333vw;margin-left: 29.1666667vw; border:0.0625rem solid var(--color-gray);}
-.m_goodsWrap{position:relative;width:79.166667vw; height:217.916667vw;margin-left:10.416667vw;}
-.m_goods dl{float:left;margin-left:2.083333vw;margin-top:3vw;width:37.5vw; height:62.5vw;}
+.m_goodsWrap{position:relative;width:79.166667vw; height:217.916667vw;margin-left:10.416667vw;bottom:10vw;}
+.m_goods dl{float:left;margin-left:2.083333vw;margin-top:8vw;width:37.5vw; height:62.5vw;}
 .m_goods dt{width:100%; height:38.541667vw;}
 .m_goods dd{margin-bottom: 0.2rem;}
 .title{font-size: 0.9rem; font-weight: bold;}
@@ -160,7 +169,8 @@ input::placeholder{
 
 
 .m_login{
-    position:relative; bottom:181.25vw;
+    display:none;
+    position:relative; z-index:999; bottom:181.25vw;
     width:79.166667vw; height:110.780083vw; margin:auto;
     background-color:rgb(199, 201, 235);
     border:0.001rem solid rgb(169, 171, 207);
@@ -224,7 +234,7 @@ input::placeholder{font-size: 1rem;}
     position:absolute;
     z-index: 2000;
     width:50vw; height:100px;
-    left:26%; top:340vw;
+    left:26%; top:350vw;
 }
 
 .m_indicator li{

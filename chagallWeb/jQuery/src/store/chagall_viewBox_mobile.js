@@ -55,12 +55,21 @@
          
          heartBtn.on('click',function(e){
           e.preventDefault();
+          var loginBox=$('.m_login');
           var it=$(this);   
-           
+          var viewBox=$('#viewBox'); 
+
           if(it.hasClass('on')){
             it.removeClass('on');
+            loginBox.stop().fadeOut();
+            viewBox.removeClass('action');
+
+            //loginBox.css({'display':'none'});
           }else{
             it.addClass('on');
+            loginBox.stop().fadeIn();
+            viewBox.addClass('action');
+            //loginBox.css({'display':'block'});
           }
           
         });
@@ -95,6 +104,9 @@
         var liSetN=liN*goodsLen;
         resetting(liSetN);
       });
+
+
+      
 
 
 
