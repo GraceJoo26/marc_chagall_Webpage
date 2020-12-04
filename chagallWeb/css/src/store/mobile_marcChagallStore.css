@@ -158,11 +158,13 @@ input::placeholder{
 .m_heart{font-size: 1rem; color:#6c6c6c;}
 .m_heart.on{color:crimson;}
 
+
 .m_login{
     position:relative; bottom:181.25vw;
     width:79.166667vw; height:110.780083vw; margin:auto;
-    background-color:#cdc;
-    border:0.001rem solid var(--color-gray);
+    background-color:rgb(199, 201, 235);
+    border:0.001rem solid rgb(169, 171, 207);
+    border-radius: 0%;
 }
 
 .m_save_text{
