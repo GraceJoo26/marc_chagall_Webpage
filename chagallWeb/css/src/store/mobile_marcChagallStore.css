@@ -91,7 +91,7 @@ input::placeholder{
 
 .m_searching i{
     position:absolute;
-    left:40vw;
+    right:7vw;
     bottom:0.1vw;
     height:100%;
     font-size:1.5rem;
@@ -160,7 +160,7 @@ input::placeholder{
 
 .m_login{
     position:relative; bottom:181.25vw;
-    width:79.166667vw; height:100.780083vw; margin:auto;
+    width:79.166667vw; height:110.780083vw; margin:auto;
     background-color:#cdc;
     border:0.001rem solid var(--color-gray);
 }
@@ -169,15 +169,22 @@ input::placeholder{
     width:100%; height:24vw;
 }
 .m_save_text li:nth-child(1){
-    float:left;font-size: 2rem;
+    float:left;
+    margin-top:1rem; margin-left: 6vw;
+    font-size: 2rem; 
 }
 .m_save_text li:nth-child(2){
-    float:left; color:crimson;
+    float:left;
+    margin-top: 1rem;
+    margin-left: 2vw; 
+    color:crimson; 
     font-size:2rem;
 }
 .m_save_text li:nth-child(3){
-    float:right; margin-right:12vw;
-    font-size:1.2rem;
+    float:right; 
+    margin-right:8vw;
+    margin-top:0.3rem;
+    font-size:1rem;
 }
 .m_info{
     width:50vw; height:30vw;
@@ -186,23 +193,30 @@ input::placeholder{
 }
 
 
-#userMail{width:50vw;height:8vw;margin-top:2vw;}
-#userName{width:49vw;height:8vw;margin-top:2vw;}
-#usePw{width:50vw;height:8vw;margin-top:2vw;}
+#userMail{width:50vw;height:8vw;margin-top:1.5vw;}
+#userName{width:50vw;height:8vw;margin-top:1.5vw; }
+#usePw{width:50vw;height:8vw;margin-top:1.5vw;}
+.m_mailfont{font-size: 0.9rem;}
+.m_namefont{font-size:0.9rem;}
+.m_passwordfont{font-size:0.9rem;}
+input::placeholder{font-size: 1rem;}
 
-.userMail{font-size: 1rem;}
 
-.m_check{margin-top:1.4rem; margin-left:5%; height:10vw;}
+
+.m_check{margin-top:1.4rem; margin-left:7%; height:10vw;}
 .m_sign_up{
-    width:30vw;height:10vw; margin-top:-0.7rem;
+    width:30vw;height:10vw;
     text-align:center; line-height:9vw; border-radius:40vw;
-    background-color: crimson; margin-left:27%;
+    background-color: crimson; margin-left:28%;
 }
 .m_log_in_real{
-    text-align:center;
+    text-align:center; margin-top:3vw;
 }
-.m_sign{font-size: 1rem;}
-.m_log{color:crimson;}
+.m_sign{font-size: 1rem;font-weight: bold; color:#fff;}
+.m_log{color:crimson; font-weight: bold;}
+.want_email{font-size:0.9rem;}
+
+
 
 .m_indicator{
     position:absolute;

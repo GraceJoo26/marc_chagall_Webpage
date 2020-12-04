@@ -58,7 +58,7 @@ legend { display: block; position: absolute; z-index: -1;
 
 input[type="text"], input[type="password"],input[type="search"],
 input[type="email"], input[type="url"], input[type="number"],
-input[type="tel"] {
+input[type="tel"], input[type="name"] {
     border:2px solid #fff; box-sizing: border-box;
     text-indent:0.5rem; cursor: pointer;}
 
