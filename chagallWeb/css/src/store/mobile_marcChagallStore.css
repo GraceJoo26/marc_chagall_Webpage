@@ -192,9 +192,17 @@ input::placeholder{
 
 .userMail{font-size: 1rem;}
 
-.m_check{margin-top:2rem; margin-left:5%; height:10vw;}
-.m_sign_up{height:10vw; text-align:center;}
-
+.m_check{margin-top:1.4rem; margin-left:5%; height:10vw;}
+.m_sign_up{
+    width:30vw;height:10vw; margin-top:-0.7rem;
+    text-align:center; line-height:9vw; border-radius:40vw;
+    background-color: crimson; margin-left:27%;
+}
+.m_log_in_real{
+    text-align:center;
+}
+.m_sign{font-size: 1rem;}
+.m_log{color:crimson;}
 
 .m_indicator{
     position:absolute;
