@@ -14,7 +14,7 @@
       var goodsClass=$('.m_goods');
       var goodsWrap=$('.m_goodsWrap');
       var goodShow='<dl><button type="button" class="m_heart"><i class="fas fa-heart"></i></button><dt></dt><dd class="title"></dd><dd class="artist"></dd><dd class="price"></dd></dl>';
-      var url="../../img/goods/";
+      var url="../img/goods/";
       
       
       var i=0;
