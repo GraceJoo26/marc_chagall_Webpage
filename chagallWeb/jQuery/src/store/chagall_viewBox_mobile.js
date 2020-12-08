@@ -13,7 +13,7 @@
  
       var goodsClass=$('.m_goods');
       var goodsWrap=$('.m_goodsWrap');
-      var goodShow='<dl><button type="button" class="m_heart"><i class="fas fa-heart"></i></button><dt></dt><dd class="title"></dd><dd class="artist"></dd><dd class="price"></dd></dl>';
+      var goodShow='<dl><button type="button" class="m_heart"><i class="fas fa-heart"></i></button><dt></dt><dd class="m_title"></dd><dd class="m_artist"></dd><dd class="m_price"></dd></dl>';
       var url="../img/goods/";
       
       
@@ -35,9 +35,9 @@
             goodsWrap.append(goodShow);    
             var gs = goodsWrap.children('dl').eq(j);
             dt=gs.find('dt');
-            title=gs.find('.title');
-            artist=gs.find('.artist');
-            price=gs.find('.price');
+            title=gs.find('.m_title');
+            artist=gs.find('.m_artist');
+            price=gs.find('.m_price');
             heartBtn=goodsWrap.find('.m_heart');
         
             dt.css({'backgroundImage':'url('+url+ dataFile[i].picture+')',
