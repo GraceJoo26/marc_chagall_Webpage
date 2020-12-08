@@ -83,7 +83,12 @@ hr{
     margin-top:3vw;
     width:100%; height:110.208333vw;
 }
-
+.m_exit{
+    float:right;
+    margin-right:1rem;
+    width:3vw; height: 3vw;
+    font-size: 2rem;
+}
 .m_searching{
     position:relative;
     bottom:25px;

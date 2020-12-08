@@ -52,10 +52,10 @@
           j+=1;  
          ;} // for()
          
+         var loginBox=$('.m_login');
          
          heartBtn.on('click',function(e){
-          e.preventDefault();
-          var loginBox=$('.m_login');
+           e.preventDefault();
           var it=$(this);   
           var viewBox=$('#viewBox'); 
 
@@ -73,6 +73,15 @@
           }
           
         });
+        var exitBtn=$('.m_exit');
+        
+        exitBtn.on('click',function(e){
+          e.preventDefault();
+          if(loginBox.css({'display':'block'})){
+            loginBox.stop().fadeOut();
+            heartBtn.removeClass('on');
+          }
+        })
   
      
         }; //resetting

@@ -1,0 +1,98 @@
+<div class="tab_wrap">
+    <div class="tab_realCategory">
+        <a href="#">Category</a>
+    </div>
+    <form>
+     <fieldset class="tab_searching">
+        <legend>fieldset의 제목을 담는 곳</legend>
+        <input type="text" name="tab_Input" id="tab_Input" value="" placeholder="Type To Search" />
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </fieldset>
+    </form>
+    <hr class="tab_fieldsetHr">
+    <dl class="tab_menu_01">
+        <dt><a href="#">Clothing</a></dt>
+        <dd>의류</dd>
+
+        <dt><a href="#">Kids & Babies</a></dt>
+        <dd>아기 용품</dd>
+
+        <dt><a href="#">PhoneCases</a></dt>
+        <dd>휴대폰케이스</dd>
+
+        <dt><a href="#">Stickers</a></dt>
+        <dd>스티커류</dd>
+
+        <dt><a href="#">Wall Art</a></dt>
+        <dd>벽지, 전시아트</dd>
+    </dl>
+
+    <dl class="tab_menu_02">
+        <dt><a href="#">Home & Living</a></dt>
+        <dd class="tab_interior">인테리어 소품</dd>
+        
+        <dt><a href="#">Stationary</a></dt>
+        <dd class="tab_stationary">문구류</dd>
+
+        <dt><a href="#">Accessories</a></dt>
+        <dd class="tab_accessory">악세사리류</dd>   
+    </dl>
+
+</div>
+<div class="tab_goods">
+   <div class="tab_goodsWrap">
+   </div>
+   <ul class="tab_indicator">
+   </ul>
+   
+    <div class="tab_login">
+        <button type="button" class="tab_exit"><span class="hidden_context">나가기</span><i class="fas fa-times"></i></button>
+        <ul class="tab_save_text">
+            <li>Sign up to Save</li>
+            <li><i class="fas fa-heart"></i></li>
+            <li>장바구니에 담으려면 회원가입하세요</li>
+        </ul>
+    
+        <form action="" method="POST">
+            
+            <fieldset>
+                <legend>회원가입란 </legend>
+                <ul class="tab_info">
+                    <li class="tab_email">
+                        <label for="userMail" class="userMail"><span class="tab_mailfont">Email</span></label><br/>
+                        <input type="email" name="userMail" id="tab_userMail" value="" placeholder="이메일" />
+                    </li>
+                    <li class="tab_username">
+                        <label for="userName" class="userName"><span class="tab_namefont">User name</span></label><br/>
+                        <input type="name" name="userName" id="tab_userName" value="" placeholder="아이디" />
+                    </li>
+                    <li class="tab_password">
+                        <label for="usePw" class="password"><span class="tab_passwordfont">Password</span></label><br/>
+                        <input type="password" class="tab_pw" name="usePw" id="tab_usePw" value="" placeholder="비밀번호" />
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>체크</legend>
+                <div class="tab_check">
+                <ul>
+                    <li>
+                        <input type="checkbox" name="recommend" id="tab_recommend" value="" />
+                        <label for="recommend"><span class="tab_want_email">새로운 제품 추천시 이메일 원합니다.</span></label>
+                    </li>
+                </ul>
+                </div>
+            </fieldset>
+             
+            <fieldset>
+                <legend></legend>
+                <div class="tab_sign_up"><button type="submit"><span class="tab_sign">Sign up</span>
+                </button></div>
+                <div class="tab_log_in_real"><button type="button"><span class="tab_log">
+                    이미 가입했다면 여기를 눌러 로그인하세요.</span>
+                </button></div>
+            </fieldset>
+        </form>
+       </div>
+    </div>

@@ -1,7 +1,8 @@
 
 .pc{
     width:100%; height:auto; background-color: #fff;
-    max-width:1920px;padding-bottom: 1rem;
+    max-width:1920px;
+    padding-bottom: 1rem;
 }
 .pc h1{
     float:left;
@@ -24,8 +25,8 @@
 }
 .pc_menu li{
     float:left;
-    width:148x; height:6.944444vw;
-    margin-left:2.2vw;
+    width:148px; height:6.944444vw;
+    margin-left:1.8vw;
     margin-top:1.2vw;
     font-weight: bold;
     font-size:2rem;
