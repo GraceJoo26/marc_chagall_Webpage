@@ -5,11 +5,10 @@
       context:document.body
   }).done(function(data){
       var goods=data;
-     
+    
       var dataFile=data.sort(function(a,b){
         return b.id-a.id;
       });
-
  
       var goodsClass=$('.lap_goods');
       var goodsWrap=$('.lap_goodsWrap');
@@ -18,63 +17,69 @@
       
       
       var i=0;
-      var goodsLen=6;
-      var dl, dt, title, artist, price, heartBtn;
-      dl=goodsWrap.find('dl');
+      var myLen=i;
+      var myViewLen=6;
+      var maxLen=dataFile.length;
+      var more=$('.lap_more_button');
+      var moreBtn=more.children('button');
       
+      var dl, dt, title, artist, price;
+      dl=goodsWrap.find('dl');
 
-      var resetting=function(n){
-        i= n || 0;
-        var j=0;
-        var gLen=i+goodsLen;
-        goodsWrap.empty();
-        for(; i<gLen;i+=1){
-          if(dataFile[i]===undefined){
+      // ajax의 배열을  for문을 써서 내가 원하는 갯수만큼 보이게 && 더보기 버튼 누르면 원하는 갯수만큼 더 보이게끔 만들기
+      moreFn=function(j){
+        var k;
+        k=j||myViewLen;
+        myLen=i+k;
+        for(; i<myLen; i+=1){
+          if(i>=maxLen){
+            more.remove();
             break;
           }else{
-            goodsWrap.append(goodShow);    
-            var gs = goodsWrap.children('dl').eq(j);
+            goodsWrap.append(goodShow);
+            
+            var gs = goodsWrap.children('dl').eq(i);
+
             dt=gs.find('dt');
             title=gs.find('.lap_title');
             artist=gs.find('.lap_artist');
             price=gs.find('.lap_price');
-            heartBtn=goodsWrap.find('.lap_heart');
-        
-            dt.css({'backgroundImage':'url('+url+ dataFile[i].picture+')',
-                    'backgroundPosition':'50% 50%', 
-                    'backgroundSize':'contain',
-                    'backgroundRepeat':'no-repeat'});
+            
+            dt.css({
+              'backgroundImage':'url('+ url + dataFile[i].picture+')',
+              'backgroundPosition':'50% 50%', 
+              'backgroundSize':'contain',
+              'backgroundRepeat':'no-repeat'});
             title.text(dataFile[i].title);
             artist.text(dataFile[i].artist);
             price.text(dataFile[i].price);
-          
-          } 
-          j+=1;  
-         ;} // for()
-         
-         var loginBox=$('.lap_login');
-         
-         heartBtn.on('click',function(e){
-           e.preventDefault();
-          var it=$(this);   
-          var viewBox=$('#viewBox'); 
+           }
+          }
 
+          
+          //하트버튼 누르면 로그인 창 뜨게 구현하기
+          var heartBtn=goodsWrap.find('.lap_heart');
+          var loginBox=$('.lap_login');
+          heartBtn.on('click',function(e){
+            e.preventDefault();
+            var it=$(this);
+            
           if(it.hasClass('on')){
             it.removeClass('on');
             loginBox.stop().fadeOut();
-            viewBox.removeClass('action');
-
-            //loginBox.css({'display':'none'});
+            
           }else{
             it.addClass('on');
             loginBox.stop().fadeIn();
-            viewBox.addClass('action');
-            //loginBox.css({'display':'block'});
+            
           }
-          
         });
+
+
+
+
+        // X 버튼 누르면 사라지게하기
         var exitBtn=$('.lap_exit');
-        
         exitBtn.on('click',function(e){
           e.preventDefault();
           if(loginBox.css({'display':'block'})){
@@ -83,37 +88,30 @@
           }
         })
   
-     
-        }; //resetting
-      resetting();
-     
-      
+        
+      };
+      moreFn(6);
 
-        var indiUl=goodsClass.find('.lap_indicator');
-        var indiCode='<li><a href="#"></a></li>'
-
-       
-        var indiLen=Math.ceil(data.length/goodsLen);
-        var indiN=0;
-        var indiLi;
-        for(;indiN<indiLen;indiN+=1){
-          indiUl.append(indiCode);
-          indiLi=indiUl.children('li').eq(indiN);
-          indiLi.find('a').text(indiN+1);
-        }
-
-      var indiLiBtn=indiUl.children('li').children('a');
-      indiLiBtn.on('click',function(e){
+      moreBtn.on('click',function(e){
         e.preventDefault();
-        var liN=parseInt($(this).text())-1;
-        var liSetN=liN*goodsLen;
-        resetting(liSetN);
+        moreFn();
       });
 
 
+
+
+      //topButton 만들기
+
+      var win=$(window);
+      var topBtn=$('.lap_top_move_button')
+      win.on('scroll',function(e){
+        e.preventDefault();
+        var winst=win.scrollTop();//scrollTop을 정해서
+        (winst>=2500)?topBtn.stop().fadeIn():topBtn.stop().fadeOut();//2500px이상이 되면 버튼 생기게
+      });
+      
       
 
 
-
-  });
-})(jQuery);
+    });
+  })(jQuery);
