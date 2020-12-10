@@ -178,8 +178,8 @@ input::placeholder{
     display:none;
     position:relative; z-index:999; bottom:181.25vw;
     width:79.166667vw; height:110.780083vw; margin:auto;
-    background-color:rgb(199, 201, 235);
-    border:0.001rem solid rgb(169, 171, 207);
+    background-color:#ccc;
+    border:0.001rem solid #ccc;
     border-radius: 0%;
 }
 

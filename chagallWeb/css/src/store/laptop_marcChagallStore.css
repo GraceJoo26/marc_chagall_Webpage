@@ -187,8 +187,8 @@
     display:none;
     position:absolute; z-index:999; top:50vw; right:10vw;
     width:50vw; height:70vw; margin:auto;
-    background-color:rgb(199, 201, 235);
-    border:0.001rem solid rgb(169, 171, 207);
+    background-color:#ccc;
+    border:0.001rem solid #ccc;
 }
 
 .lap_save_text{
