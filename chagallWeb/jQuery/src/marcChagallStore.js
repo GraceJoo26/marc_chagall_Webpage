@@ -4,7 +4,6 @@
     var url="./marcChagall_store/";
     var url_01="./marcChagall_main/";
     var url_02="./marcChagall_exhibition/";
-    var url_03="./marcChagall_search/";
     var body = $('body');
     var headBox=$('#headBox');
     var viewBox=$('#viewBox');
