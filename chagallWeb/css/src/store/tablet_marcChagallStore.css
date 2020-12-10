@@ -89,6 +89,8 @@
     width:41.666667vw;
     height:8.3333vw;
     right:11.5vw;
+    font-size:2.4rem;
+    border-bottom: 0.2rem solid var(--color-gray);
 }
 
 .tab_searching input::placeholder{
@@ -96,7 +98,7 @@
 
 .tab_searching i{
     position:absolute;
-    right:7.4vw;
+    right:16vw;
     height:100%;
     font-size:2.4rem;
 }

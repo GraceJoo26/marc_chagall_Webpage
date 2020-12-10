@@ -87,9 +87,11 @@
 }
 #pc_Input{
     position:absolute;
-    width:41.666667vw;
+    width:40.666667vw;
     height:8.3333vw;
     left:50vw;
+    font-size:4rem;
+    border-bottom: 0.4rem solid var(--color-gray);
 }
 
 .pc_searching input::placeholder{
@@ -99,8 +101,9 @@
 .pc_searching i{
     position:absolute;
     left:84vw;
+    top:2.6vw;
     height:100%;
-    font-size:3rem;
+    font-size:4rem;
 }
 
 .pc_fieldsetHr{ 
