@@ -42,7 +42,7 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
 }
-
+.mobile h1 a{width:100%; height:100%; display:block;}
 hr{ 
     margin-left:10.4166667vw;
     width:79.166667vw; 

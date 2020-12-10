@@ -13,6 +13,7 @@
     background-position: 50% 50%;
     background-size: contain;
 }
+.pc h1 a{width:100%; height:100%; display:block;}
 .pc_navBox{
     float:right;
     margin-right: 6.791667vw;

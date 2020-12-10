@@ -7,9 +7,8 @@
     var url_03="./marcChagall_search/";
     var body = $('body');
     var headBox=$('#headBox');
-    var viewBox=$('#viewBox');
-    var footBox=$('#footBox');
-
+    var searchBox=$('#searchBox');
+    
    
 
     var importMobile=function(){
@@ -17,9 +16,9 @@
         // viewBox.append('<script src="../jQuery/src/main/chagall_viewBox_mobile.js"></script>');
         // footBox.append('<script src="../jQuery/src/main/chagall_footBox_mobile.js"></script>');
         setTimeout(function(){
-            body.append('<script src="../jQuery/src/main/chagall_headBox_mobile.js"></script>'+
-                        '<script src="../jQuery/src/store/chagall_viewBox_mobile.js"></script>'+
-                        '<script src="../jQuery/src/main/chagall_footBox_mobile.js"></script>');
+            body.append(
+                '<script src="../jQuery/src/main/chagall_headBox_mobile.js"></script>'+
+                '<script src="../jQuery/src/search/chagall_searchBox_mobile.js"></script>');
         }, 100);
        
     };
@@ -29,8 +28,7 @@
         body.append(
             
             '<script src="../jQuery/src/exhibit/chagall_headBox_tablet.js"></script>'+
-            '<script src="../jQuery/src/store/chagall_viewBox_tablet.js"></script>'+
-            '<script src="../jQuery/src/main/chagall_footBox_tablet.js"></script>');
+            '<script src="../jQuery/src/search/chagall_searchBox_tablet.js"></script>');
     },100);
 };
 
@@ -40,8 +38,7 @@
         setTimeout(function(){
         body.append(
             '<script src="../jQuery/src/exhibit/chagall_headBox_laptop.js"></script>'+
-            '<script src="../jQuery/src/store/chagall_viewBox_laptop.js"></script>'+
-            '<script src="../jQuery/src/main/chagall_footBox_laptop.js"></script>');
+            '<script src="../jQuery/src/search/chagall_searchBox_laptop.js"></script>');
     },100);
 };
 
@@ -51,34 +48,29 @@
         setTimeout(function(){
         body.append(
             '<script src="../jQuery/src/exhibit/chagall_headBox_pc.js"></script>'+
-            '<script src="../jQuery/src/store/chagall_viewBox_pc.js"></script>'+
-            '<script src="../jQuery/src/main/chagall_footBox_pc.js"></script>');
+            '<script src="../jQuery/src/search/chagall_searchBox_pc.js"></script>');
     },100);
 };
 
 
     if(nowW===deviceType[0]){
         headBox.load(url_01+'chagall_main_headBox_mobile.html');
-        viewBox.load(url+'chagall_store_viewBox_mobile.html');
-        footBox.load(url_01+'chagall_main_footBox_mobile.html');
+        searchBox.load(url_03+'chagall_searchBox_mobile.html');
         importMobile();
 
     }else if(nowW===deviceType[1]){
         headBox.load(url_02+'chagall_headBox_tablet.html');
-        viewBox.load(url+'chagall_store_viewBox_tablet.html');
-        footBox.load(url_01+'chagall_main_footBox_tablet.html');
+        searchBox.load(url_03+'chagall_searchBox_tablet.html');
         importTablet();
 
     }else if(nowW===deviceType[2]){
         headBox.load(url_02+'chagall_headBox_laptop.html');
-        viewBox.load(url+'chagall_store_viewBox_laptop.html');
-        footBox.load(url_01+'chagall_main_footBox_laptop.html');
+        searchBox.load(url_03+'chagall_searchBox_laptop.html');
         importLaptop();
 
     }else if(nowW===deviceType[3]){
         headBox.load(url_02+'chagall_headBox_pc.html');
-        viewBox.load(url+'chagall_store_viewBox_pc.html');
-        footBox.load(url_01+'chagall_main_footBox_pc.html');
+        searchBox.load(url_03+'chagall_searchBox_pc.html');
         importPc();
     }
 })(jQuery);
