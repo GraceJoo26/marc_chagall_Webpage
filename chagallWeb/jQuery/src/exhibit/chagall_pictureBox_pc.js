@@ -138,6 +138,8 @@
 var explainWrap=$('.pc_explainwrap');
 var explain='<div class="pc_text_wrap"><div class="pc_divWrap"><dl><dt class="pc_name"></dt><dd class="pc_subtitle"></dd><dd class="pc_year"></dd><dd class="pc_size"></dd><dd class="pc_meterial"></dd><dd class="pc_age"></dd><dd class="pc_location"></dd><dd class="pc_content"></dd></dl></div></div>'
 
+//html에 위쪽에 적은 배열을 삽입하기 위해 만든 변수 
+
 var i=0;
 var dl, dt, dd, name, artist, year, textWrap, size, ingredient, age, location, content, divWrap, divWrapEq, ex;
 for(i=0; i<explanation.length; i+=1){
@@ -174,20 +176,25 @@ for(i=0; i<explanation.length; i+=1){
 
 }
 
+//배열 삽입
 
-var cloneDiv =  textWrap.eq(-1).clone(true);
-cloneDiv.prependTo(explainWrap);
-reDiv= explainWrap.find('.pc_text_wrap');
+var cloneDiv =  textWrap.eq(-1).clone(true); //오른쪽 맨 마지막에 있는 그림을 복제
+cloneDiv.prependTo(explainWrap); //explainWrap에 복제한 그림을 앞쪽으로 붙여넣기
+reDiv= explainWrap.find('.pc_text_wrap');//expalinWrap에 복제한 그림이 들어갔는지 확인하는 변수
 
-explainWrap.stop().css({'float':'left','position':'relative', 'left':-100+'%','width': newLi.length * 100 + '%', 'height':'1000px', 'top':'7.08vw'});
-reDiv.stop().css({'width':(100/reDiv.length)+'%','float':'left','height':59.583333+'vw'});
+explainWrap.css({'float':'left','position':'relative', 'left':-100+'%','width': newLi.length * 100 + '%', 'height':'1000px', 'top':'7.08vw'});
+//explainWrap의 css(플롯:왼쪽, 포지션:렐러티브,왼쪽으로 -100%만큼, 가로:새로운Li의 길이*100%만큼, 높이 1000px, 위여백:7.08vw)를 다시 재설정 
+//slide를 넘기려면 li를 담는 Ul이 복제된 li갯수만큼 가로값이 커져야 하므로 이렇게 css를 재정비 한다.
 
 
+reDiv.css({'width':(100/reDiv.length)+'%','float':'left','height':59.583333+'vw'});
+//reDiv의 css(가로:100%를 기준으로 복제한 li갯수만큼 나눈것의 %,플롯 왼쪽; 높이)를 다시 재설정
 
-var timed=500;
+
+var timed=500; //시간의 변수
 
 var permission;
-permission=true;
+permission=true; //마우스를 여러번 클릭해도 천천히 넘어가도록
 
 
 
@@ -197,29 +204,33 @@ var lineLi=lineUl.children('li');
 
 
 var itCheck= 0;
-lineLi.children('a').on('mouseenter focus click',function(e){
-    e.preventDefault();         
+lineLi.children('a').on('mouseenter focus click',function(e){ 
+ //Li 내부의 a 에 마우스를 클릭하거나, tab을 눌러서 focus가 되거나, 클릭이 된다면
+    e.preventDefault(); 
+ //내부에 있던 이벤트를 막고         
  
   
-  var it =$(this);
-  itCheck=it.parent('li').index();
-  lineLi.eq(itCheck).addClass('action');
-  lineLi.eq(itCheck).siblings().removeClass('action');
+  var it =$(this);                                    //내가 클릭하거나 tab하거나 마우스 올리는 것= it
+  itCheck=it.parent('li').index();                    //it의 부모인 li가 몇번째인지 확인하는 변수=itCheck
+  lineLi.eq(itCheck).addClass('action');              //li에서 내가누르는 it이 몇번짼지 확인하고 action class를 넣어라.
+  lineLi.eq(itCheck).siblings().removeClass('action');//li에서 내가 누르는 it을 제외한 나머지 li에서는 action class를 빼라.
   
-  if(e.type === 'focus' || e.type ==='mouseenter'){
+  if(e.type === 'focus' || e.type ==='mouseenter'){   //만약 event의 type이 fucus 또는 mouseenter면
       pUl.stop().animate({'marginLeft':itCheck*-100+'%'},timed);
+      //ul에 0.5초마다 -100%*내가누른 li의 index만큼 왼쪽으로 이동하는 애니메이션 적용을 하라.(그림slide왼쪽으로 넘어가라)
       explainWrap.stop().animate({'marginLeft':itCheck*-100+'%'},timed);
-    }else if(e.type == 'click'){
-        var thatLink = it.attr('href');
-        $(thatLink).attr({'tabIndex':0});
+      //explainWrap에는 0.5초마다 왼쪽으로 내가누른 li index만큼 왼쪽으로 넘어가게 하라.(설명slide왼쪽으로 넘어가라)
+    }else if(e.type == 'click'){                      //만약 click을 하면
+        var thatLink = it.attr('href');               //내가 누른 it에서 href를 찾아서
+        $(thatLink).attr({'tabIndex':0});             //thatLink에 tabIndex:0을 적용시켜라(tab키 적용시키게끔)
         // pLi.eq(itCheck).siblings().find('a').attr({'tabIndex':-1});
         /* $(thatLink).focus(); */
     }
 });
 
-lineLi.find('a').on('blur',function(){
+/* lineLi.find('a').on('blur',function(){
     $(this).attr({'tabIndex':-1});
- });
+ }); */
 
 })(jQuery);
 

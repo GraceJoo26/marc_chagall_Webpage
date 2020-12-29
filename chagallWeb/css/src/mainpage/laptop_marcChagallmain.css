@@ -1,113 +1,130 @@
 /*1440px_mainpage_laptop.css*/
 
-.laptop_view{
-    position:relative;
-    width:100%; 
-    height: 69.444444vw;   
+.laptop_view {
+  position: relative;
+  width: 100%;
+  height: 50.444444vw;
 }
-
 
 .laptop_view:before,
-.laptop_view::before{
-    content:" "; display: block; 
-    width:100%; height: 1000px;
-    background-image: url("../../../img/over-the-town-1918.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 40% 0%;
-    transition: all 500ms ease 3s;}
+.laptop_view::before {
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 1000px;
+  background-image: url('../../../img/over-the-town-1918.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 40% 0%;
+  transition: all 500ms ease 3s;
+}
 .laptop_view.action:before,
-.laptop_view.action::before{ opacity: 0.7;}
-
-
-.laptop_view .laptop_text{
-    display:none; 
-    position: absolute;
-    width:68.055556vw; height:36.972222vw;
-    top: 3.75vw; margin-left:15.972222vw;
-    text-align:center;
-    background-color: var(--color-gray);
-    line-height: 2.7777778vw;
-    font-size: 2.125rem;
-    color:var(--color-white);
-    text-align:center;
-    line-height: 3rem;
-    overflow:hidden;
-    padding-top: 6%;
-}
-.laptop_marc_chagall{
-    display:none; 
-    position: absolute;
-    width: 30vw; height:6vw;
-    left:34vw; bottom:13vw;
-    background-color: var(--color-gray);
-    font-size: 3rem;
-    color:var(--color-white);
-    text-align:center;
-    line-height: 3.75rem;
-}
-.laptop_view .laptop_enter{
-    display:none; 
-    position:absolute;
-    width:20vw; height:5vw;
-    margin-left: 39.583333vw; bottom:5vw;
-    background-color: var(--color-gray);
-    font-size: 3rem;
-    line-height: 3.75rem;
-    color:var(--color-white);
-    text-align:center;
+.laptop_view.action::before {
+  opacity: 0.7;
 }
 
-
+.laptop_view .laptop_text {
+  display: none;
+  position: absolute;
+  width: 50.055556vw;
+  height: 26.972222vw;
+  top: 2.75vw;
+  left: 28%;
+  text-align: center;
+  background-color: var(--color-gray-op);
+  line-height: 2.78888888vw;
+  font-size: 1.625rem;
+  color: var(--color-white);
+  text-align: center;
+  overflow: hidden;
+  padding-top: 6%;
+}
+.laptop_marc_chagall {
+  display: none;
+  position: absolute;
+  width: 20vw;
+  height: 4vw;
+  left: 45%;
+  bottom: 9vw;
+  background-color: var(--color-gray-op);
+  font-size: 2.3rem;
+  color: var(--color-white);
+  text-align: center;
+  line-height: 3rem;
+}
+.laptop_view .laptop_enter {
+  display: none;
+  position: absolute;
+  width: 15vw;
+  height: 3.4vw;
+  margin-left: 47.5%;
+  bottom: 4.2vw;
+  background-color: var(--color-gray-op);
+  font-size: 2.3rem;
+  line-height: 2.3rem;
+  color: var(--color-white);
+  text-align: center;
+}
 
 /*--------------------------footer----------------------------------------------*/
-.laptop_footer{
-    position:relative;
-    width:100%; height:300px;
-    background-color: var(--color-gray);
+.laptop_footer {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-color: var(--color-gray);
 }
-.laptop_footer .footer_logo{
-    float:left; 
-    margin-left:6.25vw; margin-top: 4.5833333vw;
-    width:11.041667vw; height:10.694444vw;
-    background-image: url("../../../icon/footer_logo.png");
-    background-position: 50% 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.laptop_footer .address_01{
-    float:left;
-    margin-top: 6.583333vw; margin-left:6vw;
-    width:46.1944444vw; height:10.277778vw;
-    font-size: 1rem;
-    text-align:center;
-    color:var(--color-white);
+.laptop_footer .footer_logo {
+  float: left;
+  margin-left: 6.25vw;
+  margin-top: 4.5833333vw;
+  width: 11.041667vw;
+  height: 10.694444vw;
+  background-image: url('../../../icon/footer_logo.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.email > .laptop_email{
-    position:absolute;
-    top:4vw; left:73vw;
-    width:27.083333vw; height:9.72222222vw;
+.laptop_footer .address_01 {
+  float: left;
+  margin-top: 6.583333vw;
+  margin-left: 6vw;
+  width: 46.1944444vw;
+  height: 10.277778vw;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--color-white);
 }
 
-#userId{
-    width: 20.1388889vw; height: 2.430556vw;
-    background-color: #fff;
+.email > .laptop_email {
+  position: absolute;
+  top: 4vw;
+  left: 73vw;
+  width: 27.083333vw;
+  height: 9.72222222vw;
 }
 
-#text_01{
-    margin-top: 1vw;
-    width:20.1388889vw; height:13vw;
-    background-color: #fff;
+#userId {
+  width: 20.1388889vw;
+  height: 2.430556vw;
+  background-color: #fff;
 }
-.send{
-    position:absolute;
-    top:16.6vw; left:88vw;
-    width:4.16667vw; height:2.777778vw;
-    background-color: var(--color-gray);
-    text-align:center;
-    line-height: 2rem;
-    font-size: 1rem;
-    color:#fff;
+
+#text_01 {
+  margin-top: 1vw;
+  width: 20.1388889vw;
+  height: 13vw;
+  background-color: #fff;
+}
+.send {
+  position: absolute;
+  top: 16.6vw;
+  left: 88vw;
+  width: 4.16667vw;
+  height: 2.777778vw;
+  background-color: var(--color-gray);
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1rem;
+  color: #fff;
 }

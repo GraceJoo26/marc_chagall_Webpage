@@ -1,13 +1,12 @@
 @charset "UTF-8";
 /* variable.css */
 
-:root{
+:root {
   --var: 100%;
 
-  --color-white:#fff;
-  --color-black:#171717;
-  --color-gray:#6c6c6c;
-  --color-blue:#04719A;
-  
-
+  --color-white: #fff;
+  --color-black: #171717;
+  --color-gray: #6c6c6c;
+  --color-blue: #04719a;
+  --color-gray-op: rgba(108, 108, 108, 0.8);
 }
