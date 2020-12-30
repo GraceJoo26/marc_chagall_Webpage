@@ -88,7 +88,7 @@
     width:79.166667vw; min-height:57.6vw;
     top: 12.166667vw; margin-left:10.416667vw;
     text-align:center;
-    background-color: var(--color-gray);
+    background-color: var(--color-gray-op);
     line-height: 6.25vw;
     color:#fff;
     font-size:3.333333333333vw;
@@ -98,9 +98,9 @@
 .mobile_enter{
     display:none; 
     position:absolute;
-    width:45.625vw; height: 13.6666667vw; 
-    top:90vw; margin-left:25vw;
-    background-color: var(--color-gray);
+    width: 36.625vw; height: 10.6666667vw; 
+    top:90vw; margin-left:30%;
+    background-color: var(--color-gray-op);
     font-size:7vw;
     color:#fff;
     text-align: center;

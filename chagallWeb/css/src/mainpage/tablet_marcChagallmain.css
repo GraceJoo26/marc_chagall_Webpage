@@ -23,7 +23,7 @@
     top:5vw; margin-left:11vw;
     width:77.984375vw; height:55.9921875vw;
     text-align:center;
-    background-color: var(--color-gray);
+    background-color: var(--color-gray-op);
     line-height:5.859375vw;
     font-size: 3.125vw;
     color:#fff;
@@ -36,7 +36,7 @@
     position: absolute;
     width:31.25vw; height:9vw;
     top:80vw ; margin-left: 34.375vw;
-    background-color:var(--color-gray);
+    background-color:var(--color-gray-op);
     font-size: 4.6875vw; 
     color:#fff; 
     line-height:5rem;
