@@ -1,13 +1,17 @@
 /*-----------------1440 headBox-----------------*/
 .laptop{
-    width:100%; height:auto; background-color: #fff;
-    max-width:1440px;padding-bottom: 1rem;
-    min-width:1030px;
+    width:980px; 
+    height:100px;
+    margin:auto; 
+    background-color: #fff;
+    padding-bottom: 1rem;
+    border-bottom: 5px solid var(--color-gray);
+   
 }
 .laptop h1{
     float:left;
-    margin-left:11.805556vw;
-    width:7.5vw; height:6.944444vw;
+    padding-top: 15px;
+    width:100px; height:100px;
     background-image: url(../../../icon/logo_480.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -16,18 +20,18 @@
 .laptop h1 a{width:100%; height:100%; display:block;}
 .lap_navBox{
     float:right;
-    margin-right:11.111111vw;
-    width:48.61111vw; height:6.94444vw;
+    width:800px; height:52px;
 }
 
 .lap_navBox > .lap_menu{
-    width:inherit; height: inherit;
+    float:right;
+    width:580px; height: 80px;
 }
 .lap_menu li{
     float:left;
-    width:148x; height:6.944444vw;
-    margin-left:2.2vw;
-    margin-top:1.2vw;
+    width:148px; height:52.083px;
+    margin-left:15px;
+    margin-top:9px;
     font-weight: bold;
     font-size:2rem;
     color:var(--color-gray);
@@ -45,17 +49,12 @@
 
 .lap_menu li:last-child{
     float:right;
-    width:3.472222vw; height:6.9444vw;
+    width:26.042px; height:52.083px;
     font-size:3rem;
     text-align:right;
 }
 
-.three{
-    margin-left:10.416667vw;
-    width:79.166667vw;
-    color:var(--color-gray);
-    text-align:center;
-}
+
 
 
 
@@ -67,11 +66,10 @@
     position:relative;
 }
 .lap_PE_wrap{
-    margin-top:5.902778vw;
-    margin-left:10.316667vw;
+    padding-top:44.271px;
+    margin:auto;
     width:79.166667vw;
     height:79.6875vw;
-    background-color: var(--color-gray);
 }
 .lap_pic_wrap{
     position:absolute;
